@@ -112,3 +112,13 @@ shot of `sed` will do it.
 ```console
 $ sudo sed -i 's|X_MOUSE_CURSOR="DMZ"|X_MOUSE_CURSOR="DMZ-Black"|' /etc/sysconfig/windowmanager
 ```
+
+## Install Papirus Icon Themes
+
+Under openSUSE Leap I find that packaged version of the main theme is pretty
+outdated so we do this outside of package management.
+
+```console
+$ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
+$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
+```
