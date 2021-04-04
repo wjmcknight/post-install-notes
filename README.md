@@ -2,6 +2,11 @@
 
 A set of Markdown-formatted documents noting things I do after fresh Linux installs.
 
+Given that I use a couple different Linux distributions these are going to be
+separated by which distribution they're central to.
+
+Seriously, that's it.
+
 ## Maintainer
 
 * John McKnight <john@jhnmcknght.ca>
