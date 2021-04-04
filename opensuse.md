@@ -26,33 +26,25 @@ $ sudo zypper up
 ### Core
 
 ```console
-$ sudo zypper in htop nmap tmux memtest86+ zsh bzr git subversion mercurial \
-argyllcms AdobeICCProfiles icc-profiles-all ibus xfce4-places-plugin \
-faba-icon-theme moka-icon-theme metatheme-greybird-common lsb-release
+$ sudo zypper in htop nmap tmux memtest86+ zsh bzr git subversion mercurial argyllcms AdobeICCProfiles icc-profiles-all ibus xfce4-places-plugin faba-icon-theme moka-icon-theme metatheme-greybird-common lsb-release
 ```
 
 ### Graphics
 
 ```console
-$ sudo zypper in gimp-save-for-web gimp-ufraw gutenprint-gimpplugin inkscape \
-darktable darktable-tools-basecurve darktable-tools-noise
+$ sudo zypper in gimp-save-for-web gimp-ufraw gutenprint-gimpplugin inkscape darktable darktable-tools-basecurve darktable-tools-noise
 ```
 
 ### Internet
 
 ```console
-$ sudo zypper in chromium chromium-ffmpeg-extra chromium-plugin-widevinecdm \
-enigmail filezilla hexchat
+$ sudo zypper in chromium chromium-ffmpeg-extra chromium-plugin-widevinecdm enigmail filezilla hexchat
 ```
 
 ### Multimedia
 
 ```console
-$ sudo zypper in asunder audacious audacity guvcview handbrake-gtk xfburn \
-beets flac lame mpg123 mpv normalize youtube-dl \
-gstreamer-plugins-bad-orig-addon gstreamer-plugins-good-extra \
-gstreamer-plugins-libav gstreamer-plugins-ugly \
-gstreamer-plugins-ugly-orig-addon gstreamer-plugins-vaapi cmus
+$ sudo zypper in asunder audacious audacity guvcview handbrake-gtk xfburn beets flac lame mpg123 mpv normalize youtube-dl gstreamer-plugins-bad-orig-addon gstreamer-plugins-good-extra gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-orig-addon gstreamer-plugins-vaapi cmus
 ```
 
 ### Install VS Code
