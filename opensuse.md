@@ -115,7 +115,7 @@ $ sudo sed -i 's|X_MOUSE_CURSOR="DMZ"|X_MOUSE_CURSOR="DMZ-Black"|' /etc/sysconfi
 
 ## Install Papirus Icon Themes
 
-Under openSUSE Leap I find that packaged version of the main theme is pretty
+Under openSUSE Leap I find the packaged version of the main theme is pretty
 outdated so we do this outside of package management.
 
 ```console
