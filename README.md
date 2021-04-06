@@ -7,6 +7,12 @@ separated by which distribution they're central to.
 
 Seriously, that's it.
 
+## Note
+
+It's worth mentioning that I use [XFCE] as a desktop so some of the packages I
+choose to install are either specific to XFCE or chosen for being GTK-based
+without any GNOME dependencies or fewer GNOME dependencies.
+
 ## Maintainer
 
 * John McKnight <john@jhnmcknght.ca>
@@ -14,3 +20,5 @@ Seriously, that's it.
 ## License
 
 Creative Commons Zero 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
+[XFCE]: https://www.xfce.org
