@@ -30,8 +30,8 @@ reboot when the update is complete.
 
 ## Purge Old Kernel(s)
 
-At this point for me it leaves three different kernels installs when you should
-only need two. Thankfully Void provide a handy tool for this.
+At this point for me it leaves three different kernels installed when you
+should only need two. Thankfully Void provides a handy tool for this.
 
 ```console
 $ sudo vkpurge list
