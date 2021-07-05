@@ -134,8 +134,7 @@ use that.
 
 ```console
 $ sudo mkdir -p /usr/share/icons/default
-$ echo -e "[Icon Theme]\nInherits=Adwaita" > index.theme
-$ sudo cp index.theme /usr/share/icons/default && rm index.theme
+$ sudo sh -c 'echo "[Icon Theme]\nInherits=Adwaita" > /usr/share/icons/default/index.theme'
 ```
 
 ## Services
