@@ -66,7 +66,7 @@ $ sudo xbps-install -S
 ### Core
 
 ```console
-$ sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git subversion mercurial argyllcms ibus galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin faba-icon-theme papirus-icon-theme greybird-themes
+$ sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git subversion mercurial hugo argyllcms galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing

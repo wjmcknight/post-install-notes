@@ -26,7 +26,7 @@ $ sudo zypper up
 ### Core
 
 ```console
-$ sudo zypper in htop nmap tmux memtest86+ zsh bzr git subversion mercurial argyllcms AdobeICCProfiles icc-profiles-all ibus xfce4-places-plugin faba-icon-theme moka-icon-theme metatheme-greybird-common lsb-release
+$ sudo zypper in htop nmap tmux memtest86+ zsh bzr git subversion mercurial argyllcms AdobeICCProfiles icc-profiles-all xfce4-places-plugin faba-icon-theme moka-icon-theme metatheme-greybird-common lsb-release
 ```
 
 ### Graphics
