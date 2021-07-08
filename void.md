@@ -137,6 +137,14 @@ $ sudo mkdir -p /usr/share/icons/default
 $ sudo sh -c 'echo "[Icon Theme]\nInherits=Adwaita" > /usr/share/icons/default/index.theme'
 ```
 
+## Fix VSCode Icon
+
+```console
+$ mkdir -p ~/.local/share/applications
+$ cp /usr/share/applications/code-oss.desktop ~/.local/share/applications
+$ sed -i 's|Icon=code-oss|Icon=com.visualstudio.code-oss|' ~/.local/share/applications/code-oss.desktop
+```
+
 ## Services
 
 ```console
