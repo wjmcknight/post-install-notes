@@ -9,7 +9,7 @@ First let's switch to a faster mirror then sync.
 
 ```console
 $ sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
-$ sudo sed -i 's|https://alpha.de.repo.voidlinux.org|https://mirror.clarkson.edu/voidlinux|' /etc/xbps.d/00-repository-main.conf
+$ sudo sed -i 's|alpha.de.repo.voidlinux.org|mirror.clarkson.edu/voidlinux|' /etc/xbps.d/00-repository-main.conf
 $ sudo xbps-install -S
 ```
 
@@ -57,7 +57,7 @@ We'll also switch to the same faster mirror then sync.
 ```console
 $ sudo xbps-install void-repo-nonfree
 $ sudo cp /usr/share/xbps.d/10-repository-nonfree.conf /etc/xbps.d/
-$ sudo sed -i 's|https://alpha.de.repo.voidlinux.org|https://mirror.clarkson.   edu/voidlinux|' /etc/xbps.d/10-repository-nonfree.conf
+$ sudo sed -i 's|alpha.de.repo.voidlinux.org|mirror.clarkson.edu/voidlinux|' /etc/xbps.d/10-repository-nonfree.conf
 $ sudo xbps-install -S
 ```
 
