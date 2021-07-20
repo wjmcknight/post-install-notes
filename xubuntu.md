@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-$ sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git subversion mercurial build-essential aptitude argyll icc-profiles faba-icon-theme moka-icon-theme
+$ sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git subversion mercurial build-essential aptitude argyll icc-profiles libimage-exiftool-perl faba-icon-theme moka-icon-theme
 ```
 
 ### Graphics
