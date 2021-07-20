@@ -27,7 +27,7 @@ $ sudo dpkg --audit
 ### Core
 
 ```console
-$ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git subversion mercurial build-essential aptitude dmz-cursor-theme argyll icc-profiles galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
+$ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git subversion mercurial build-essential aptitude argyll icc-profiles libimage-exiftool-perl galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
