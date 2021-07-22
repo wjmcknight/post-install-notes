@@ -79,6 +79,12 @@ $ flatpak install flathub com.spotify.Client
 $ sudo sysv-rc-conf
 ```
 
+### Fix haveged not starting due to AppArmor
+
+```console
+$ sudo sh -c 'echo "/run/haveged.pid w," > /etc/apparmor.d/local/usr.sbin.haveged'
+```
+
 ## Install Papirus Icon Themes
 
 ```console
