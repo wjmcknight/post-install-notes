@@ -89,5 +89,5 @@ $ sudo sh -c 'echo "/run/haveged.pid w," > /etc/apparmor.d/local/usr.sbin.havege
 
 ```console
 $ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
-$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/    papirus-filezilla-themes/master/install.sh | sh
+$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
 ```
