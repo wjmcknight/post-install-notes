@@ -61,7 +61,7 @@ tools.
 
 ```console
 $ sudo apt install flatpak
-$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.  flatpakrepo
+$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 A reboot is needed here before being able to install anything from Flathub.
