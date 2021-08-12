@@ -150,6 +150,7 @@ $ sed -i 's|Icon=code-oss|Icon=com.visualstudio.code-oss|' ~/.local/share/applic
 ```console
 $ sudo rm /var/service/sshd
 $ sudo ln -s /etc/sv/chronyd /var/service/
+$ sudo ln -s /etc/sv/cups-browsed /var/service/
 $ sudo ln -s /etc/sv/cupsd /var/service/
 $ sudo ln -s /etc/sv/haveged /var/service/
 $ sudo ln -s /etc/sv/uptimed /var/service/
