@@ -75,7 +75,7 @@ tools.
 
 ```console
 $ sudo apt install flatpak
-$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.  flatpakrepo
+$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 A reboot is needed here before being able to install anything from Flathub.
@@ -100,5 +100,5 @@ $ sudo sed -i 's|#greeter-hide-users=false|greeter-hide-users=false|' /etc/light
 
 ```console
 $ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
-$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/      papirus-filezilla-themes/master/install.sh | sh
+$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
 ```
