@@ -1,4 +1,4 @@
-# Debian Post-Install Notes
+# Debian Bullseye Post-Install Notes
 
 ## Enable contrib and non-free Repos
 
@@ -11,15 +11,21 @@ $ sudo sed -i 's|main|main contrib non-free|' /etc/apt/sources.list
 ```console
 $ wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
 $ sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
-$ sudo sh -c 'echo "# Deb Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ buster main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ buster main non-free" > /etc/apt/sources.list.d/multimedia.list'
+$ sudo sh -c 'echo "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free" > /etc/apt/sources.list.d/multimedia.list'
+```
+
+## Enable Backports
+
+```console
+$ sudo sh -c 'echo "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free" > /etc/apt/sources.list.d/backports.list'
 ```
 
 ## Update System
 
 ```console
 $ sudo apt update
-$ sudo apt dist-upgrade
-$ sudo dpkg --audit
+$ sudo apt full-upgrade
+$ sudo dpkg -C
 ```
 
 ## Install Some Packages
@@ -27,7 +33,7 @@ $ sudo dpkg --audit
 ### Core
 
 ```console
-$ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git subversion mercurial build-essential aptitude argyll icc-profiles libimage-exiftool-perl conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
+$ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git subversion mercurial build-essential aptitude hugo argyll icc-profiles libimage-exiftool-perl conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
@@ -45,7 +51,7 @@ $ sudo apt install chromium filezilla geary hexchat transmission-gtk
 ### Multimedia
 
 ```console
-$ sudo apt install asunder audacious audacity guvcview handbrake-gtk parole xfburn beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-vaapi cmus
+$ sudo apt install asunder audacious audacity guvcview handbrake-gtk beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-vaapi cmus
 ```
 
 ### Virtualization
@@ -81,13 +87,10 @@ $ flatpak install flathub org.signal.Signal
 $ flatpak install flathub com.spotify.Client
 ```
 
-## Set Default Cursor Theme
-
-```console
-$ sudo update-alternatives --config x-cursor-theme
-```
-
 ## Disable greeter-hide-users for LightDM
+
+By disabling this you can select your username from a dropdown menu instead of
+having to type it out.
 
 ```console
 $ sudo sed -i 's|#greeter-hide-users=false|greeter-hide-users=false|' /etc/lightdm/lightdm.conf
