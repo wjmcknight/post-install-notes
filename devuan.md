@@ -66,11 +66,12 @@ $ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.fl
 
 A reboot is needed here before being able to install anything from Flathub.
 
-### Install Signal and Spotify
+### Install Signal, Spotify, and Telegram
 
 ```console
 $ flatpak install flathub org.signal.Signal
 $ flatpak install flathub com.spotify.Client
+$ flatpak install flathub org.telegram.desktop
 ```
 
 ## Enable/disable service
