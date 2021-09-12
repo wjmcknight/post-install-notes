@@ -11,7 +11,7 @@ $ sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-es
 ### Graphics
 
 ```console
-$ sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape darktable
+$ sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape 
 ```
 
 ### Internet
@@ -46,10 +46,10 @@ tools.
 Snap is enabled and setup by default in Ubuntu and its derivatives so there's
 no installation and setup. We can just go ahead and install some Snaps.
 
-### Install Chromium, Signal, and Spotify
+### Install Chromium, Signal, Spotify, and Telegram
 
 ```console
-$ snap install chromium chromium-ffmpeg signal-desktop spotify
+$ snap install chromium chromium-ffmpeg signal-desktop spotify telegram-desktop
 ```
 
 ## Set Default Cursor Theme

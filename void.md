@@ -72,7 +72,7 @@ $ sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh
 ### Graphics and Printing
 
 ```console
-$ sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape darktable
+$ sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape 
 ```
 
 ### Internet

@@ -25,7 +25,7 @@ $ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop 
 ### Graphics
 
 ```console
-$ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape darktable
+$ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape 
 ```
 
 ### Internet
