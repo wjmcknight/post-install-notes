@@ -3,29 +3,29 @@
 ## Enable contrib and non-free Repos
 
 ```console
-$ sudo sed -i 's|main|main contrib non-free|' /etc/apt/sources.list
+sudo sed -i 's|main|main contrib non-free|' /etc/apt/sources.list
 ```
 
 ## Enable Deb Multimedia
 
 ```console
-$ wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
-$ sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
-$ sudo sh -c 'echo "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free" > /etc/apt/sources.list.d/multimedia.list'
+wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
+sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
+sudo sh -c 'echo "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free" > /etc/apt/sources.list.d/multimedia.list'
 ```
 
 ## Enable Backports
 
 ```console
-$ sudo sh -c 'echo "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free" > /etc/apt/sources.list.d/backports.list'
+sudo sh -c 'echo "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free" > /etc/apt/sources.list.d/backports.list'
 ```
 
 ## Update System
 
 ```console
-$ sudo apt update
-$ sudo apt full-upgrade
-$ sudo dpkg -C
+sudo apt update
+sudo apt full-upgrade
+sudo dpkg -C
 ```
 
 ## Install Some Packages
@@ -33,37 +33,37 @@ $ sudo dpkg -C
 ### Core
 
 ```console
-$ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git build-essential aptitude hugo argyll icc-profiles libimage-exiftool-perl conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed bzr git build-essential aptitude hugo argyll icc-profiles libimage-exiftool-perl conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
 
 ```console
-$ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape 
+sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape 
 ```
 
 ### Internet
 
 ```console
-$ sudo apt install chromium filezilla geary hexchat transmission-gtk
+sudo apt install chromium filezilla geary hexchat transmission-gtk
 ```
 
 ### Multimedia
 
 ```console
-$ sudo apt install asunder audacious audacity guvcview handbrake-gtk beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-vaapi cmus
+sudo apt install asunder audacious audacity guvcview handbrake-gtk beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-vaapi cmus
 ```
 
 ### Virtualization
 
 ```console
-$ sudo apt install qemu-system libvirt-clients libvirt-daemon-system virt-manager
+sudo apt install qemu-system libvirt-clients libvirt-daemon-system virt-manager
 ```
 
 ## Grant Access to libvirt Group for Virtualization
 
 ```console
-$ sudo adduser yourusernamehere libvirt
+sudo adduser yourusernamehere libvirt
 ```
 
 A logout is needed here to reflect the permission changes for running libvirt
@@ -74,8 +74,8 @@ tools.
 ### Install and Enable
 
 ```console
-$ sudo apt install flatpak
-$ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
 A reboot is needed here before being able to install anything from Flathub.
@@ -83,9 +83,9 @@ A reboot is needed here before being able to install anything from Flathub.
 ### Install Signal, Spotify, and Telegram
 
 ```console
-$ flatpak install flathub org.signal.Signal
-$ flatpak install flathub com.spotify.Client
-$ flatpak install flathub org.telegram.desktop
+flatpak install flathub org.signal.Signal
+flatpak install flathub com.spotify.Client
+flatpak install flathub org.telegram.desktop
 ```
 
 ## Disable greeter-hide-users for LightDM
@@ -94,12 +94,12 @@ By disabling this you can select your username from a dropdown menu instead of
 having to type it out.
 
 ```console
-$ sudo sed -i 's|#greeter-hide-users=false|greeter-hide-users=false|' /etc/lightdm/lightdm.conf
+sudo sed -i 's|#greeter-hide-users=false|greeter-hide-users=false|' /etc/lightdm/lightdm.conf
 ```
 
 ## Install Papirus Icon Themes
 
 ```console
-$ sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
-$ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
+sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
+sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
 ```
