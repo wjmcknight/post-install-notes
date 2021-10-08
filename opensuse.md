@@ -72,7 +72,7 @@ $ sudo zypper in codium
 ## Install Hugo
 
 ```console
-$ sudo zypper addrepo https://download.opensuse.org/repositories/home:GNorth/openSUSE_Leap_15.2/home:GNorth.repo
+$ sudo zypper addrepo https://download.opensuse.org/repositories/home:GNorth/openSUSE_Leap_15.3/home:GNorth.repo
 $ sudo zypper ref
 $ sudo zypper in hugo
 ```
