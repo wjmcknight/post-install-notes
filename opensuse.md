@@ -54,7 +54,7 @@ sudo zypper in qemu libvirt-client libvirt-daemon-qemu virt-manager
 ## Grant Access to libvirt Group for Virtualization
 
 ```console
-sudo usermod -G libvirt yourusernamehere
+sudo usermod -aG libvirt yourusernamehere
 ```
 
 A logout is needed here to reflect the permission changes for running libvirt
