@@ -63,7 +63,7 @@ sudo apt install qemu-system libvirt-clients libvirt-daemon-system virt-manager
 ## Grant Access to libvirt Group for Virtualization
 
 ```console
-sudo adduser yourusernamehere libvirt
+sudo usermod -aG libvirt yourusername
 ```
 
 A logout is needed here to reflect the permission changes for running libvirt
