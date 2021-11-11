@@ -45,7 +45,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install chromium filezilla geary hexchat transmission-gtk
+sudo apt install filezilla geary hexchat transmission-gtk
 ```
 
 ### Multimedia
@@ -95,6 +95,7 @@ A reboot is needed here before being able to install anything from Flathub.
 flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.telegram.desktop
+flatpak install flathub org.chromium.Chromium
 ```
 
 ## Disable greeter-hide-users for LightDM
