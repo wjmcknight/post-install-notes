@@ -95,7 +95,6 @@ A reboot is needed here before being able to install anything from Flathub.
 flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.telegram.desktop
-flatpak install flathub org.chromium.Chromium
 ```
 
 ## Disable greeter-hide-users for LightDM
