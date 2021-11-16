@@ -45,7 +45,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install filezilla geary hexchat transmission-gtk
+sudo apt install claws-mail claws-mail-litehtml-viewer claws-mail-pgpinline claws-mail-pgpmime claws-mail-smime-plugin filezilla hexchat transmission-gtk
 ```
 
 ### Multimedia
