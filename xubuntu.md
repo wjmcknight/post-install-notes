@@ -80,11 +80,7 @@ sudo apt install papirus-icon-theme filezilla-theme-papirus libreoffice-style-pa
 ### Disable
 
 ```console
-sudo systemctl stop blueman-mechanism
-sudo systemctl disable blueman-mechanism
-sudo systemctl stop bluetooth
-sudo systemctl disable bluetooth
-sudo systemctl stop rsync
-sudo systemctl disable rsync
-sudo systemctl stop ufw
-sudo systemctl disable ufw
+sudo systemctl disable --now blueman-mechanism
+sudo systemctl disable --now bluetooth
+sudo systemctl disable --now rsync
+sudo systemctl disable --now ufw
