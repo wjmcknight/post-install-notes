@@ -157,6 +157,6 @@ sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/haveged /var/service/
 sudo ln -s /etc/sv/uptimed /var/service/
 sudo ln -s /etc/sv/libvirtd /var/service/
-sudo ln -s /etv/sv/virtlockd /var/service/
+sudo ln -s /etc/sv/virtlockd /var/service/
 sudo ln -s /etc/sv/virtlogd /var/service/
 ```
