@@ -99,7 +99,7 @@ sudo xbps-install abiword gnumeric xfce4-dict xreader
 sudo xbps-install libvirt qemu virt-manager
 ```
 
-## Grant Access to libvirt Group for Virtualization
+## Grant Access to kvm and libvirt Groups for Virtualization
 
 ```console
 sudo usermod -aG kvm,libvirt yourusername
@@ -139,7 +139,10 @@ sudo mkdir -p /usr/share/icons/default
 sudo sh -c 'echo "[Icon Theme]\nInherits=Adwaita" > /usr/share/icons/default/index.theme'
 ```
 
-## Fix VSCode Icon
+## Fix VS Code Icon
+
+I do this on a per user basis just to save the hassle of it being overwritten
+when VS Code is updated.
 
 ```console
 mkdir -p ~/.local/share/applications
@@ -149,8 +152,9 @@ sed -i 's|Icon=code-oss|Icon=com.visualstudio.code-oss|' ~/.local/share/applicat
 
 ## Services
 
+### Enable
+
 ```console
-sudo rm /var/service/sshd
 sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
@@ -159,4 +163,10 @@ sudo ln -s /etc/sv/uptimed /var/service/
 sudo ln -s /etc/sv/libvirtd /var/service/
 sudo ln -s /etc/sv/virtlockd /var/service/
 sudo ln -s /etc/sv/virtlogd /var/service/
+```
+
+### Disable
+
+```console
+sudo rm /var/service/sshd
 ```
