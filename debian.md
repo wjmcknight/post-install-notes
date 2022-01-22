@@ -45,7 +45,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install filezilla geary hexchat transmission-gtk
+sudo apt install chromium filezilla geary hexchat transmission-gtk
 ```
 
 ### Multimedia
@@ -69,17 +69,7 @@ sudo usermod -aG libvirt yourusername
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Install Brave
-
-```console
-sudo apt install apt-transport-https curl
-sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-sudo apt update
-sudo apt install brave-browser
-```
-
-## Install VSCodium
+## Install VS Codium
 
 ```console
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
