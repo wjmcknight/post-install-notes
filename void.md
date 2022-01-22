@@ -78,7 +78,7 @@ sudo xbps-install cups cups-filters system-config-printer system-config-printer-
 ### Internet
 
 ```console
-sudo xbps-install filezilla geary hexchat transmission-gtk
+sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmission-gtk
 ```
 
 ### Multimedia
@@ -125,7 +125,6 @@ A reboot is needed here before being able to install anything from Flathub.
 flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.telegram.desktop
-flatpak install flathub org.chromium.Chromium
 ```
 
 ## Set Default Cursor Theme
