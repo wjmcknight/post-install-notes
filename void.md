@@ -90,7 +90,7 @@ sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrak
 ### Office
 
 ```console
-sudo xbps-install libreoffice xfce4-dict xreader
+sudo xbps-install abiword gnumeric xfce4-dict xreader
 ```
 
 ### Virtualization
