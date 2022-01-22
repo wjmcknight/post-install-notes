@@ -41,7 +41,7 @@ sudo adduser yourusernamehere libvirt
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Install VSCodium
+## Install VS Codium
 
 ```console
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
