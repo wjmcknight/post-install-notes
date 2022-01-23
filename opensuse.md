@@ -23,7 +23,7 @@ sudo zypper up
 ### Core
 
 ```console
-sudo zypper in htop nmap tmux memtest86+ zsh bzr git-core hugo argyllcms icc-profiles-all feh scrot exiftool conky xfce4-places-plugin faba-icon-theme moka-icon-theme metatheme-greybird-common
+sudo zypper in htop nmap tmux memtest86+ zsh bzr git-core argyllcms icc-profiles-all feh scrot exiftool conky xfce4-places-plugin faba-icon-theme moka-icon-theme metatheme-greybird-common
 ```
 
 ### Graphics
