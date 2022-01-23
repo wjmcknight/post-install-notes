@@ -35,7 +35,7 @@ sudo zypper in gutenprint-gimpplugin inkscape
 ### Internet
 
 ```console
-sudo zypper in enigmail filezilla hexchat
+sudo zypper in chromium chromium-ffmpeg-extra chromium-plugin-widevinecdm enigmail filezilla hexchat
 ```
 
 ### Multimedia
