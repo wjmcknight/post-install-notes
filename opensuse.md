@@ -41,7 +41,7 @@ sudo zypper in enigmail filezilla hexchat
 ### Multimedia
 
 ```console
-sudo zypper in asunder audacious audacity guvcview handbrake-gtk beets ffmpeg-4 flac lame mpg123 mpv normalize btag youtube-dl gstreamer-plugins-ugly gstreamer-plugins-vaapi cmus
+sudo zypper in asunder audacious audacity guvcview handbrake-gtk beets ffmpeg-4 flac lame mpg123 mpv normalize youtube-dl gstreamer-plugins-ugly gstreamer-plugins-vaapi cmus
 ```
 
 ### Virtualization
