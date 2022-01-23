@@ -59,14 +59,6 @@ sudo usermod -aG libvirt yourusername
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Install Brave
-
-```console
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo zypper ar https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
-sudo zypper in brave-browser
-```
-
 ## Install VSCodium
 
 ```console
