@@ -5,13 +5,13 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles feh scrot libimage-exiftool-perl conky-std faba-icon-theme moka-icon-theme
+sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std faba-icon-theme moka-icon-theme
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape 
+sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape feh scrot libimage-exiftool-perl 
 ```
 
 ### Internet
