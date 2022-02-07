@@ -4,6 +4,40 @@ While I typically use XFCE, this time we're going minimal for the laptop using
 [i3]. During the installation process when we get to the software selection
 step the only category we'll have enabled is "standard system utilities".
 
+I also do laptop installs using Debian's [non-free] images because they ship
+with firmware that their regular images don't due to licensing.
+
+## WiFi
+
+With the minimal installation we just did we'll need to bring up our wireless
+interface manually as well as connecting to your network. The following steps
+are taken from Debian's [WiFi] wiki.
+
+```console
+sudo ip link set wlp1s0 up
+```
+
+Next, I add the following lines to `/etc/network/interfaces`:
+
+```console
+allow-hotplug wlp1s0
+iface wlp1s0 inet dhcp
+wpa-ssid ESSID
+wpa-psk PASSWORD
+```
+
+Obviously you'll want to replace `ESSID` and `PASSWORD` with the correct values
+that reflect your network configuration.
+
+Now we bring up networking:
+
+```console
+sudo ifup wlp1s0
+sudo iw wlp1s0 link
+```
+
+Running `ping -c3 google.com` won't hurt just to make sure you're connected.
+
 ## Enable contrib and non-free Repos
 
 ```console
@@ -54,6 +88,10 @@ I typically reboot at this point since this set of packages leaves me with the
 basis of a usable desktop and login manager. The rest is done from a terminal
 emulator.
 
+Before rebooting you'll want to remove the four lines added to 
+`/etc/network/interfaces` since networking from here on out will be handled by
+[NetworkManager].
+
 ### Graphics
 
 ```console
@@ -70,6 +108,12 @@ sudo apt install chromium filezilla firefox-esr geary hexchat transmission-gtk
 
 ```console
 sudo apt install asunder audacious audacity guvcview handbrake-gtk parole xfburn beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-plugins-ugly gstreamer1.0-vaapi cmus
+```
+
+### Office
+
+```console
+sudo apt install abiword atril gnumeric xfce4-dict
 ```
 
 ### Virtualization
@@ -143,3 +187,6 @@ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-
 ```
 
 [i3]: https://i3wm.org/
+[non-free]: https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/
+[WiFi]: https://wiki.debian.org/WiFi/HowToUse#Using_ifupdown
+[NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
