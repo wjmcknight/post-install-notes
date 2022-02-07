@@ -66,13 +66,13 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim chrony cpufrequtils haveged uptimed bzr git python3-pip ruby hugo argyllcms feh scrot exiftool galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin vscode conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim chrony cpufrequtils haveged uptimed bzr git python3-pip ruby hugo argyllcms galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin vscode conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
 
 ```console
-sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape 
+sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool 
 ```
 
 ### Internet
