@@ -7,6 +7,9 @@ step the only category we'll have enabled is "standard system utilities".
 I also do laptop installs using Debian's [non-free] images because they ship
 with firmware that their regular images don't due to licensing.
 
+One thing this guide won't cover is how to configure i3 but there's a great
+guide to get you started on that from the fine people at [Fedora Magazine].
+
 ## WiFi
 
 With the minimal installation we just did we'll need to bring up our wireless
@@ -179,3 +182,4 @@ sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-
 [non-free]: https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/
 [WiFi]: https://wiki.debian.org/WiFi/HowToUse#Using_ifupdown
 [NetworkManager]: https://wiki.gnome.org/Projects/NetworkManager
+[Fedora Magazine]: https://fedoramagazine.org/getting-started-i3-window-manager/
