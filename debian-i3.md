@@ -159,17 +159,6 @@ flatpak install flathub com.spotify.Client
 flatpak install flathub org.telegram.desktop
 ```
 
-## Disable Default Networking
-
-Since we installed without using any sort of desktop then installed
-network-manager as part of the Core packages, here we'll disable Debian's
-default networking.
-
-```console
-sudo sed -i 's|allow-hotplug enp1s0|#allow-hotplug enp1s0|' /etc/network/interfaces
-sudo sed -i 's|iface enp1s0 inet dhcp|#iface enp1s0 inet dhcp|' /etc/network/interfaces
-```
-
 ## Disable greeter-hide-users for LightDM
 
 By disabling this you can select your username from a dropdown menu instead of
