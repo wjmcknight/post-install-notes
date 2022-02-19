@@ -58,7 +58,7 @@ no installation and setup. We can just go ahead and install some Snaps.
 ### Install Chromium, Signal, Spotify, and Telegram
 
 ```console
-snap install chromium chromium-ffmpeg signal-desktop spotify telegram-desktop
+snap install chromium chromium-ffmpeg signal-desktop spotify
 ```
 
 ## Set Default Cursor Theme
