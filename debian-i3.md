@@ -84,7 +84,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed xserver-xorg x11-xserver-utils i3 lightdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings rxvt-unicode thunar thunar-volman nitrogen compton bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std light galculator mousepad gvfs-backends faba-icon-theme moka-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed xserver-xorg x11-xserver-utils i3 lightdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings rxvt-unicode thunar thunar-volman nitrogen compton bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles light galculator mousepad gvfs-backends faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 I typically reboot at this point since this set of packages leaves me with the
