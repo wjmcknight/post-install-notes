@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-essential aptitude python3-pip ruby hugo argyll icc-profiles rofi conky-std faba-icon-theme moka-icon-theme
+sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-essential aptitude python3-pip ruby hugo argyll icc-profiles rxvt-unicode rofi conky-std faba-icon-theme moka-icon-theme
 ```
 
 ### Graphics

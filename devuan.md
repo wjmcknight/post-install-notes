@@ -35,7 +35,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed sysv-rc-conf bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles rofi conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed sysv-rc-conf bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles rxvt-unicode rofi conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
