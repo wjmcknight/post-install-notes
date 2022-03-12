@@ -53,7 +53,7 @@ sudo apt install chromium filezilla geary hexchat transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install asunder audacious audacity guvcview handbrake-gtk beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-vaapi cmus
+sudo apt install asunder audacious audacity guvcview handbrake beets ffmpeg flac lame mpg123 mpv normalize-audio btag youtube-dl gstreamer1.0-vaapi cmus
 ```
 
 ### Virtualization
