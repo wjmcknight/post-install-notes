@@ -134,7 +134,7 @@ use that.
 
 ```console
 sudo mkdir -p /usr/share/icons/default
-sudo sh -c 'echo "[Icon Theme]\nInherits=Adwaita" > /usr/share/icons/default/index.theme'
+echo "[Icon Theme]\nInherits=Adwaita" | sudo tee /usr/share/icons/default/index.theme
 ```
 
 ## Fix VS Code Icon
