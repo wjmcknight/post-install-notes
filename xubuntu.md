@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux gamin zsh vim haveged uptimed bzr git build-essential aptitude python3-pip ruby hugo argyll icc-profiles rxvt-unicode rofi conky-std faba-icon-theme moka-icon-theme
+sudo apt install htop nmap tmux gamin zsh vim vim-gtk3 haveged uptimed bzr git build-essential aptitude python3-pip ruby hugo argyll icc-profiles rxvt-unicode rofi conky-std faba-icon-theme moka-icon-theme
 ```
 
 ### Graphics
@@ -40,15 +40,6 @@ sudo adduser yourusernamehere libvirt
 
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
-
-## Install VS Codium
-
-```console
-wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
-echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
-sudo apt update
-sudo apt install codium
-```
 
 ## Snap
 
