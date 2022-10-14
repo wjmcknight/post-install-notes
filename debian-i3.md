@@ -84,7 +84,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim tuned haveged uptimed xserver-xorg x11-xserver-utils i3 lightdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings rxvt-unicode thunar thunar-volman nitrogen compton bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles light galculator mousepad gvfs-backends faba-icon-theme moka-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ mlocate gamin zsh vim vim-gtk3 tuned haveged uptimed xserver-xorg x11-xserver-utils i3 lightdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings rxvt-unicode thunar thunar-volman nitrogen compton bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles xbacklight galculator mousepad gvfs-backends faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 I typically reboot at this point since this set of packages leaves me with the
@@ -134,15 +134,6 @@ sudo usermod -aG libvirt yourusername
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Install VS Codium
-
-```console
-wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
-echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
-sudo apt update
-sudo apt install codium
-```
-
 ## Flatpak
 
 ### Install and Enable
@@ -159,15 +150,6 @@ A reboot is needed here before being able to install anything from Flathub.
 ```console
 flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
-```
-
-## Disable greeter-hide-users for LightDM
-
-By disabling this you can select your username from a dropdown menu instead of
-having to type it out.
-
-```console
-sudo sed -i 's|#greeter-hide-users=false|greeter-hide-users=false|' /etc/lightdm/lightdm.conf
 ```
 
 ## Install Papirus Icon Themes
