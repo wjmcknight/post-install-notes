@@ -152,11 +152,10 @@ flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 ```
 
-## Install Papirus Icon Themes
+## Install Papirus Icon Theme
 
 ```console
 sudo wget -qO- https://git.io/papirus-icon-theme-install | sh
-sudo wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-filezilla-themes/master/install.sh | sh
 ```
 
 [i3]: https://i3wm.org/
