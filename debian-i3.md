@@ -68,17 +68,6 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-## Package Clean Up
-
-Especially because we're using Deb Multimedia, you'll probably get a message
-about some packages that can be removed. Let's do that then run `dpkg` as a
-sanity check.
-
-```console
-sudo apt autoremove
-sudo dpkg -C
-```
-
 ## Install Some Packages
 
 ### Core
@@ -116,7 +105,7 @@ sudo apt install asunder audacious audacity guvcview handbrake-gtk parole xfburn
 ### Office
 
 ```console
-sudo apt install abiword atril gnumeric xfce4-dict
+sudo apt install abiword atril gnumeric
 ```
 
 ### Virtualization
