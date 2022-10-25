@@ -11,13 +11,13 @@ sudo sed -i 's|main|main contrib non-free|' /etc/apt/sources.list
 ```console
 wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
 sudo dpkg -i deb-multimedia-keyring_2016.8.1_all.deb
-sudo sh -c 'echo "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free" > /etc/apt/sources.list.d/multimedia.list'
+echo "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ bullseye main non-free" | sudo tee /etc/apt/sources.list.d/multimedia.list
 ```
 
 ## Enable Backports
 
 ```console
-sudo sh -c 'echo "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free" > /etc/apt/sources.list.d/backports.list'
+echo "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bullseye-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
 ## Update System
