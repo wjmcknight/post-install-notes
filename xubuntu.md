@@ -11,7 +11,7 @@ sudo apt install htop nmap tmux gamin zsh vim vim-gtk3 haveged uptimed bzr git b
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape feh scrot libimage-exiftool-perl 
+sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun inkscape feh scrot libimage-exiftool-perl dcraw
 ```
 
 ### Internet

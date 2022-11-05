@@ -49,7 +49,7 @@ sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nm
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape feh scrot libimage-exiftool-perl 
+sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-lensfun inkscape feh scrot libimage-exiftool-perl dcraw
 ```
 
 ### Internet
