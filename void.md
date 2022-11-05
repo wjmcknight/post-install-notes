@@ -102,7 +102,7 @@ sudo xbps-install libvirt qemu virt-manager
 ## Grant Access to kvm and libvirt Groups for Virtualization
 
 ```console
-sudo usermod -aG kvm,libvirt yourusername
+sudo usermod -aG libvirt yourusername
 ```
 
 A logout is needed here to reflect the permission changes for running libvirt
