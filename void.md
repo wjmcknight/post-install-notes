@@ -5,41 +5,31 @@ the packages installed are XFCE specific.
 
 ## Sync Remote Repository and Update System
 
-First let's switch to a faster mirror then sync.
+First let's switch to a faster mirror then update the system.
 
 ```console
 sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
 sudo sed -i 's|repo-default.voidlinux.org|mirrors.servercentral.com/voidlinux|' /etc/xbps.d/00-repository-main.conf
-sudo xbps-install -S
-```
-
-At this point it's a good idea to update `xbps` before anything else.
-
-```console
-sudo xbps-install -u xbps
-```
-
-Now we update the system.
-
-```console
 sudo xbps-install -Su
 ```
 
-There's definitely going to be a kernel update involved so it wouldn't hurt to
-reboot when the update is complete.
+If you noticed the kernel was updated it wouldn't hurt to reboot here.
 
 ## Purge Old Kernel(s)
 
-At this point for me it leaves three different kernels installed when you
-should only need two. Thankfully Void provides a handy tool for this.
+This may not be necessary but Void provides a handy tool for it. Void will
+keep two kernels on your system but if you find there's a third one installed
+the `vkpurge` will remove the oldest of them.
+
+First let's see if there's anything that can be removed.
 
 ```console
 sudo vkpurge list
-5.10.17_1
 ```
 
 The output of this shows available candidates for kernels that can be removed.
-Let's remove it.
+If this command doesn't output anything you're good to go. If it outputs
+something like `5.10.17_1`, let's remove it.
 
 ```console
 sudo vkpurge rm all
@@ -61,18 +51,29 @@ sudo sed -i 's|repo-default.voidlinux.org|mirrors.servercentral.com/voidlinux|' 
 sudo xbps-install -S
 ```
 
+## AppArmor
+
+For added security we'll install AppArmor here. I feel it's a better idea to
+add and enable it here first before we install anything else.
+
+```console
+sudo xbps-install apparmor
+sudo sed -i 's|GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4"|GRUB_CMDLINE_LINUX_DEFAULT="loglevel=4 apparmor=1 security=apparmor"|' /etc/default/grub
+sudo update-grub
+```
+
 ## Install Packages
 
 ### Core
 
 ```console
-sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim chrony cpufrequtils haveged uptimed bzr git python3-pip ruby hugo argyllcms galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin vscode rofi conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ mlocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git python3-pip ruby hugo argyllcms rxvt-unicode galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin rofi conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
 
 ```console
-sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool 
+sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool dcraw
 ```
 
 ### Internet
@@ -90,7 +91,7 @@ sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrak
 ### Office
 
 ```console
-sudo xbps-install abiword gnumeric xfce4-dict xreader
+sudo xbps-install abiword gnumeric xreader
 ```
 
 ### Virtualization
@@ -119,7 +120,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed here before being able to install anything from Flathub.
 
-### Install Signal, Spotify, and Telegram
+### Install Signal and Spotify
 
 ```console
 flatpak install flathub org.signal.Signal
@@ -135,17 +136,6 @@ use that.
 ```console
 sudo mkdir -p /usr/share/icons/default
 echo "[Icon Theme]\nInherits=Adwaita" | sudo tee /usr/share/icons/default/index.theme
-```
-
-## Fix VS Code Icon
-
-I do this on a per user basis just to save the hassle of it being overwritten
-when VS Code is updated.
-
-```console
-mkdir -p ~/.local/share/applications
-cp /usr/share/applications/code-oss.desktop ~/.local/share/applications
-sed -i 's|Icon=code-oss|Icon=com.visualstudio.code-oss|' ~/.local/share/applications/code-oss.desktop
 ```
 
 ## Services
