@@ -99,7 +99,7 @@ sudo apt install chromium filezilla firefox-esr geary hexchat transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install asunder audacious audacity guvcview handbrake-gtk parole xfburn beets ffmpeg flac lame mpg123 mpv normalize-audio eyeD3 youtube-dl gstreamer1.0-plugins-ugly gstreamer1.0-vaapi cmus
+sudo apt install asunder audacious audacity guvcview handbrake-gtk parole xfburn beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 youtube-dl gstreamer1.0-plugins-ugly gstreamer1.0-vaapi cmus
 ```
 
 ### Office
