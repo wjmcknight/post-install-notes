@@ -19,7 +19,7 @@ sudo sed -i 's|pkgmaster.devuan.org|dev.beard.ly/devuan|' /etc/apt/sources.list
 ## Enable Backports
 
 ```console
-echo -e "# Backports\ndeb http://deb.devuan.org/merged chimaera-backports main contrib non-free\ndeb-src http://deb.devuan.org/merged chimaera-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/backports.list
+echo -e "# Backports\ndeb http://dev.beard.ly/devuan/merged chimaera-backports main contrib non-free\ndeb-src http://dev.beard.ly/devuan/merged chimaera-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
 ## Install Some Packages
