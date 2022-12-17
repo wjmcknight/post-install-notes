@@ -47,6 +47,12 @@ Running `ping -c3 google.com` won't hurt just to make sure you're connected.
 sudo sed -i 's|main|main contrib non-free|' /etc/apt/sources.list
 ```
 
+## Switch Security Repo to Better Mirror
+
+```console
+sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/       sources.list
+```
+
 ## Enable Deb Multimedia
 
 ```console
