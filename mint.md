@@ -12,7 +12,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ mlocate gamin zsh vim vim-gtk3 tuned haveged uptimed bzr git build-essential python3-pip ruby hugo argyll icc-profiles rxvt-unicode rofi conky-std faba-icon-theme moka-icon-theme greybird-gtk-theme
+sudo apt install htop nmap tmux memtest86+ gamin zsh vim vim-gtk3 tuned haveged uptimed bzr git build-essential python3-pip ruby hugo argyll icc-profiles rxvt-unicode rofi conky-std faba-icon-theme moka-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
