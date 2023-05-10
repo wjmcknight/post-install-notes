@@ -55,7 +55,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed xorg i3 i3lock i3status dmenu lxdm elogind polkit pulseaudio pavucontrol pasystray NetworkManager network-manager-applet xfce4-settings alacritty Thunar thunar-volman nitrogen picom bzr git python3-pip ruby hugo argyllcms xautolock xrdb galculator-gtk3 gvfs gvfs-mtp faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed xorg i3 i3lock i3status dmenu lxdm elogind polkit pulseaudio pavucontrol pasystray NetworkManager network-manager-applet xfce4-settings alacritty Thunar thunar-volman nitrogen picom bzr git base-devel python3-pip ruby hugo argyllcms xautolock xrdb galculator-gtk3 gvfs gvfs-mtp faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Services and Reboot
