@@ -24,6 +24,15 @@ Next we uncomment the following line to enable `sudo` access when running
 Logging out of root then logging back in as the user you created should now
 have proper `sudo` privileges.
 
+## WiFi
+
+```
+wpa_passphrase [ssid] [key] | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
+sudo ln -s /usr/share/dhcpcd/hooks/10-wpa_supplicant /usr/libexec/dhcpcd-hooks
+sudo ln -s /etc/sv/dhcpcd /var/service/
+sudo sv restart dhcpcd
+```
+
 ## Enable nonfree Repository
 
 ```console
@@ -78,7 +87,7 @@ sudo ln -s /etc/sv/uptimed /var/service/
 ### Graphics and Printing
 
 ```console
-sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool dcraw
+sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape ristretto feh scrot exiftool dcraw
 ```
 
 ### Internet
@@ -90,7 +99,7 @@ sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmissio
 ### Multimedia
 
 ```console
-sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrake xfburn beets mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3
+sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrake parole xfburn beets mpg123 mpg123-pulseaudio mpv youtube-dl gst-plugins-good1 gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3
 ```
 
 ### Office
