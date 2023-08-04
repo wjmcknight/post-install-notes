@@ -67,7 +67,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install intel-ucode htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git base-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git base-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
@@ -85,13 +85,13 @@ sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmissio
 ### Multimedia
 
 ```console
-sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrake xfburn beets mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3
+sudo xbps-install asunder audacious audacious-plugins audacity guvcview handbrake xfburn beets python3-Flask mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3
 ```
 
 ### Office
 
 ```console
-sudo xbps-install abiword gnumeric xreader
+sudo xbps-install libreoffice xreader
 ```
 
 ### Virtualization
@@ -123,7 +123,6 @@ A reboot is needed here before being able to install anything from Flathub.
 ### Install Signal and Spotify
 
 ```console
-flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 ```
 
