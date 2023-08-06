@@ -73,7 +73,7 @@ sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop na
 ### Graphics and Printing
 
 ```console
-sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool dcraw
+sudo xbps-install cups cups-filters system-config-printer system-config-printer-udev gutenprint gimp inkscape feh scrot exiftool dcraw ImageMagick
 ```
 
 ### Internet
