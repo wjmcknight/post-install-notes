@@ -67,7 +67,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
@@ -85,7 +85,7 @@ sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmissio
 ### Multimedia
 
 ```console
-sudo xbps-install asunder audacity deadbeef guvcview handbrake xfburn beets python3-Flask mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3
+sudo xbps-install asunder audacity deadbeef guvcview handbrake xfburn beets python3-Flask mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3 libspa-bluetooth
 ```
 
 ### Office
@@ -120,7 +120,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed here before being able to install anything from Flathub.
 
-### Install Signal and Spotify
+### Install Spotify
 
 ```console
 flatpak install flathub com.spotify.Client
@@ -137,11 +137,18 @@ sudo mkdir -p /usr/share/icons/default
 echo -e "[Icon Theme]\nInherits=Adwaita" | sudo tee /usr/share/icons/default/index.theme
 ```
 
+## Add User to bluetooth group
+
+```console
+sudo usermod -aG bluetooth yourusername
+```
+
 ## Services
 
 ### Enable
 
 ```console
+sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
