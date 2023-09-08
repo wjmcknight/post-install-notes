@@ -85,7 +85,7 @@ sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmissio
 ### Multimedia
 
 ```console
-sudo xbps-install asunder audacity deadbeef guvcview handbrake xfburn beets python3-Flask mpg123 mpg123-pulseaudio mpv youtube-dl gstreamer-vaapi cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio eyeD3 libspa-bluetooth
+sudo xbps-install asunder audacity deadbeef guvcview handbrake xfburn beets python3-Flask mpg123 mpg123-pulseaudio mpv yt-dlp gstreamer-vaapi mpd mpc ncmpcpp eyeD3 libspa-bluetooth
 ```
 
 ### Office
