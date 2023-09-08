@@ -67,7 +67,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux memtest86+ plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux memtest86+ cronie plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby hugo argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
@@ -150,6 +150,7 @@ sudo usermod -aG bluetooth yourusername
 ```console
 sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo ln -s /etc/sv/chronyd /var/service/
+sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/haveged /var/service/
