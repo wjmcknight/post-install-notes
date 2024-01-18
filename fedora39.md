@@ -68,6 +68,13 @@ sudo dnf copr enable varlad/zellij
 sudo dnf install zellij
 ```
 
+### Zola
+
+```console
+sudo dnf copr enable fz0x1/zola
+sudo dnf install zola
+```
+
 ## Flatpak
 
 ### Install and Enable
