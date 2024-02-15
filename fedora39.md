@@ -18,7 +18,7 @@ sudo dnf config-manager --enable fedora-cisco-openh264
 ### Core
 
 ```console
-sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc conky papirus-icon-theme
+sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc conky papirus-icon-theme epapirus-icon-theme
 ```
 
 ### Graphics
