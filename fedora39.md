@@ -36,7 +36,7 @@ sudo dnf install chromium filezilla hexchat
 ### Multimedia
 
 ```console
-sudo dnf install audacious audacious-plugins-ffaudio audacious-plugins-freeworld audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly cmus
+sudo dnf install audacity-freeworld deadbeef guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly cmus
 ```
 
 ### Virtualization
