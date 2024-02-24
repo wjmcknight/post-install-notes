@@ -46,10 +46,10 @@ tools.
 Snap is enabled and setup by default in Ubuntu and its derivatives so there's
 no installation and setup. We can just go ahead and install some Snaps.
 
-### Install Chromium, Signal, and Spotify
+### Install Chromium and Spotify
 
 ```console
-snap install chromium chromium-ffmpeg signal-desktop spotify
+snap install chromium chromium-ffmpeg spotify
 ```
 
 ## Set Default Cursor Theme

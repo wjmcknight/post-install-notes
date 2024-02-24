@@ -50,10 +50,9 @@ tools.
 
 ## Flatpak
 
-### Install Signal and Spotify
+### Install Spotify
 
 ```console
-flatpak install flathub org.signal.Signal
 flatpak install flathub com.spotify.Client
 ```
 
