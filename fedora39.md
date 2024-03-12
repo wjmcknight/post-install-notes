@@ -54,13 +54,6 @@ sudo usermod -aG libvirt yourusername
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-### Alacritty
-
-```console
-sudo dnf copr enable atim/alacritty
-sudo dnf install alacritty
-```
-
 ### Zellij
 
 ```console
