@@ -54,13 +54,6 @@ sudo usermod -aG libvirt yourusername
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-### Zellij
-
-```console
-sudo dnf copr enable varlad/zellij
-sudo dnf install zellij
-```
-
 ### Zola
 
 ```console

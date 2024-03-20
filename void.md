@@ -67,7 +67,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap zellij memtest86+ cronie xtools xdg-desktop-portal-gtk exfatprogs plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby vscode zola argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap memtest86+ cronie xtools xdg-desktop-portal-gtk exfatprogs plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby vscode zola argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
