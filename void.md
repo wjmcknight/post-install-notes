@@ -3,13 +3,9 @@
 As usual the basis for this is off the Void Linux XFCE live medium so some of
 the packages installed are XFCE specific.
 
-## Sync Remote Repository and Update System
-
-First let's switch to a faster mirror then update the system.
+## Update System
 
 ```console
-sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
-sudo sed -i 's|repo-default.voidlinux.org|mirrors.servercentral.com/voidlinux|' /etc/xbps.d/00-repository-main.conf
 sudo xbps-install -Su
 ```
 
@@ -42,7 +38,7 @@ all of them.
 
 ## Enable nonfree Repository
 
-We'll also switch to the same faster mirror then sync.
+We'll also switch to the a faster mirror then sync.
 
 ```console
 sudo xbps-install void-repo-nonfree
@@ -67,7 +63,7 @@ sudo update-grub
 ### Core
 
 ```console
-sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap memtest86+ cronie xtools xdg-desktop-portal-gtk exfatprogs plocate gamin zsh vim gvim bluez blueman chrony cpufrequtils haveged uptimed bzr git base-devel python3-devel ruby-devel python3-pip ruby vscode zola argyllcms xrdb alacritty galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
+sudo xbps-install vulkan-loader mesa-vulkan-radeon mesa-vaapi mesa-vdpau htop nano nmap tmux ncurses-term memtest86+ cronie xtools xdg-desktop-portal-gtk exfatprogs plocate gamin zsh vim gvim bluez blueman cpufrequtils haveged uptimed git base-devel python3-devel ruby-devel python3-pip ruby zola argyllcms xrdb galculator-gtk3 xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-whiskermenu-plugin conky faba-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics and Printing
@@ -149,9 +145,7 @@ sudo usermod -aG bluetooth yourusername
 
 ```console
 sudo ln -s /etc/sv/bluetoothd /var/service/
-sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
-sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/haveged /var/service/
 sudo ln -s /etc/sv/uptimed /var/service/
