@@ -1,7 +1,8 @@
 # Debian Bookworm Post-Install Notes: i3
 
-This guide starts with doing an XFCE installation when given the option from
-[tasksel].
+This guide starts with doing a barebones installation when given the option
+from [tasksel] by making sure the only option selected is
+`standard system utilities`.
 
 ## WiFi
 
@@ -51,7 +52,7 @@ echo -e "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ 
 ## Enable Backports
 
 ```console
-echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/backports.list
+echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main non-free-firmware non-free contrib\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main non-free-firmware non-free contrib" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
 ## Update System
@@ -59,17 +60,6 @@ echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bookworm-bac
 ```console
 sudo apt update
 sudo apt full-upgrade
-```
-
-## Package Clean Up
-
-Especially because we're using Deb Multimedia, you'll probably get a message
-about some packages that can be removed. Let's do that then run `dpkg` as a
-sanity check.
-
-```console
-sudo apt autoremove
-sudo dpkg -C
 ```
 
 ## Install Some Packages
@@ -89,7 +79,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install chromium filezilla firefox geary transmission-gtk
+sudo apt install chromium filezilla firefox-esr geary transmission-gtk
 ```
 
 ### Multimedia
