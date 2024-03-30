@@ -49,7 +49,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree firmware-realtek amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
@@ -61,7 +61,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install chromium filezilla geary hexchat transmission-gtk
+sudo apt install chromium filezilla geary transmission-gtk
 ```
 
 ### Multimedia

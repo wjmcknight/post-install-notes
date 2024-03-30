@@ -36,7 +36,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install chromium filezilla geary hexchat transmission-gtk
+sudo apt install chromium filezilla geary transmission-gtk
 ```
 
 ### Multimedia
