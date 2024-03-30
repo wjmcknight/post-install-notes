@@ -1,10 +1,9 @@
 # Debian Bookworm Post-Install Notes: i3
 
-## WiFi
+This guide starts with doing an XFCE installation when given the option from
+[tasksel].
 
-With the minimal installation we just did we'll need to bring up our wireless
-interface manually as well as connecting to your network. The following steps
-are taken from Debian's [WiFi] wiki.
+## WiFi
 
 ```console
 sudo ip link set wlp1s0 up
@@ -19,8 +18,8 @@ wpa-ssid ESSID
 wpa-psk PASSWORD
 ```
 
-Obviously you'll want to replace `ESSID` and `PASSWORD` with the correct values
-that reflect your network configuration.
+You'll want to replace `ESSID` and `PASSWORD` with the correct values that
+reflect your network configuration.
 
 Now we bring up networking:
 
@@ -32,7 +31,7 @@ sudo iw wlp1s0 link
 ## Enable contrib and non-free Repos
 
 ```console
-sudo sed -i 's|main non-free-firmware|main non-free-firmware contrib non-free|' /etc/apt/sources.list
+sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
 ```
 
 ## Switch Security Repo to Better Mirror
@@ -62,21 +61,24 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
+## Package Clean Up
+
+Especially because we're using Deb Multimedia, you'll probably get a message
+about some packages that can be removed. Let's do that then run `dpkg` as a
+sanity check.
+
+```console
+sudo apt autoremove
+sudo dpkg -C
+```
+
 ## Install Some Packages
 
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek intel-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed xorg i3 lxdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings xfce4-terminal thunar thunar-volman nitrogen compton bzr git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles xautolock xbacklight galculator mousepad gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed xorg i3 lxdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings xfce4-terminal thunar thunar-volman nitrogen compton git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles xautolock xbacklight galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
-
-I typically reboot at this point since this set of packages leaves me with the
-basis of a usable desktop and login manager. The rest is done from a terminal
-emulator.
-
-Before rebooting you'll want to remove the four lines added to
-`/etc/network/interfaces` since networking from here on out will be handled by
-[NetworkManager].
 
 ### Graphics
 
@@ -87,7 +89,7 @@ sudo apt install create-resources gimp gimp-data-extras gimp-gutenprint gimp-len
 ### Internet
 
 ```console
-sudo apt install chromium filezilla firefox-esr geary hexchat transmission-gtk
+sudo apt install chromium filezilla firefox geary transmission-gtk
 ```
 
 ### Multimedia
@@ -126,10 +128,18 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-A reboot is needed here before being able to install anything from Flathub.
+A reboot is needed before being able to install anything from Flatpak.
 
 ### Install Spotify
 
 ```console
 flatpak install flathub com.spotify.Client
 ```
+
+## Final Note
+
+Before rebooting you'll want to remove the four lines added to
+`/etc/network/interfaces` since networking from here on out will be handled by
+`NetworkManager`.
+
+[tasksel]: https://wiki.debian.org/tasksel

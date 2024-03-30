@@ -1,9 +1,12 @@
-# Debian Bookworm Post-Install Notes
+# Debian Bookworm Post-Install Notes: XFCE
+
+This guide starts with doing an XFCE installation when given the option from
+[tasksel].
 
 ## Enable contrib and non-free Repos
 
 ```console
-sudo sed -i 's|main non-free-firmware|main non-free-firmware contrib non-free|' /etc/apt/sources.list
+sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
 ```
 
 ## Switch Security Repo to Better Mirror
@@ -49,7 +52,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree firmware-realtek amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
@@ -94,10 +97,12 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-A reboot is needed here before being able to install anything from Flathub.
+A reboot is needed before being able to install anything from Flatpak.
 
 ### Install Spotify
 
 ```console
 flatpak install flathub com.spotify.Client
 ```
+
+[tasksel]: https://wiki.debian.org/tasksel
