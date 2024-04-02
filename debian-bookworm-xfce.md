@@ -26,7 +26,7 @@ echo -e "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ 
 ## Enable Backports
 
 ```console
-echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main contrib non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main contrib non-free" | sudo tee /etc/apt/sources.list.d/backports.list
+echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main non-free-firmware non-free contrib\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ bookworm-backports main non-free-firmware non-free contrib" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
 ## Update System
