@@ -30,7 +30,7 @@ sudo dnf install gimp gimp-data-extras gimp-lensfun gutenprint-plugin inkscape f
 ### Internet
 
 ```console
-sudo dnf install chromium filezilla hexchat
+sudo dnf install chromium filezilla
 ```
 
 ### Multimedia

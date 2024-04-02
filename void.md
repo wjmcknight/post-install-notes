@@ -75,7 +75,7 @@ sudo xbps-install cups cups-filters system-config-printer system-config-printer-
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine filezilla geary hexchat transmission-gtk
+sudo xbps-install chromium chromium-widevine filezilla geary transmission-gtk
 ```
 
 ### Multimedia

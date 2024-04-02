@@ -17,7 +17,7 @@ sudo apt install create-resources gimp-data-extras gimp-gutenprint gimp-lensfun 
 ### Internet
 
 ```console
-sudo apt install enigmail filezilla hexchat
+sudo apt install enigmail filezilla
 ```
 
 ### Multimedia
