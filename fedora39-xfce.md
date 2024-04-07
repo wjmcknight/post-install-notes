@@ -6,6 +6,12 @@
 sudo dnf update
 ```
 
+## Disable Installation of Weak Dependencies
+
+```console
+echo "install_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
+```
+
 ## Enable RPM Fusion and openh264
 
 ```console
@@ -18,13 +24,13 @@ sudo dnf config-manager --enable fedora-cisco-openh264
 ### Core
 
 ```console
-sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc conky papirus-icon-theme epapirus-icon-theme
+sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
 ```
 
 ### Graphics
 
 ```console
-sudo dnf install gimp gimp-data-extras gimp-lensfun gutenprint-plugin inkscape feh scrot perl-Image-ExifTool dcraw
+sudo dnf install gimp gimp-data-extras gimp-lensfun gutenprint-plugin inkscape feh scrot dcraw
 ```
 
 ### Internet
@@ -36,13 +42,13 @@ sudo dnf install chromium filezilla
 ### Multimedia
 
 ```console
-sudo dnf install audacity-freeworld deadbeef guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly cmus
+sudo dnf install audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly cmus
 ```
 
 ### Virtualization
 
 ```console
-sudo dnf install qemu-system-x86 libvirt-client libvirt-daemon virt-manager
+sudo dnf install qemu libvirt virt-manager
 ```
 
 ## Grant Access to libvirt Group for Virtualization
@@ -93,6 +99,7 @@ sudo systemctl disable iscsi-starter --now
 
 ```console
 sudo systemctl enable haveged --now
+sudo systemctl enable libvirtd --now
 sudo systemctl enable tuned --now
 sudo systemctl enable uptimed --now
 ```
