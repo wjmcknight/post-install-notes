@@ -52,7 +52,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip ruby-rubygems hugo argyll icc-profiles conky-std rofi galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics

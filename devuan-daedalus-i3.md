@@ -53,7 +53,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux          memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed xorg i3 lxdm    pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-   settings xfce4-terminal thunar thunar-volman nitrogen compton git build-        essential aptitude sysv-rc-conf python3-pip ruby-rubygems hugo argyll icc-profiles xautolock xbacklight galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed xorg i3 lxdm pulseaudio pavucontrol pasystray network-manager network-manager-gnome xfce4-settings xfce4-terminal thunar thunar-volman nitrogen compton git build-essential aptitude sysv-rc-conf python3-pip ruby-rubygems hugo argyll icc-profiles xautolock xbacklight galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
