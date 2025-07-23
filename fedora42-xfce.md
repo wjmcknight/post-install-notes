@@ -41,7 +41,7 @@ sudo dnf install chromium filezilla
 ### Multimedia
 
 ```console
-sudo dnf install audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly mpd ncmpcpp
+sudo dnf install audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly mpd mpc ncmpcpp
 ```
 
 ### Virtualization
