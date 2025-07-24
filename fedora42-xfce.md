@@ -23,7 +23,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 ### Core
 
 ```console
-sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
+sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git onefetch ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc afetch conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
 ```
 
 ### Graphics
