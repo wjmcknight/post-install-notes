@@ -9,13 +9,13 @@ echo "install_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
 ## Update System and Reboot
 
 ```console
-sudo dnf update
+sudo dnf up
 ```
 
 ## Enable RPM Fusion
 
 ```console
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf in https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 ## Install Some Packages
@@ -23,31 +23,31 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 ### Core
 
 ```console
-sudo dnf install htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git onefetch ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc afetch conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
+sudo dnf in htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git onefetch ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc afetch conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
 ```
 
 ### Graphics
 
 ```console
-sudo dnf install gimp gimp-data-extras inkscape feh scrot dcraw
+sudo dnf in gimp gimp-data-extras inkscape feh scrot dcraw
 ```
 
 ### Internet
 
 ```console
-sudo dnf install chromium filezilla
+sudo dnf in chromium filezilla
 ```
 
 ### Multimedia
 
 ```console
-sudo dnf install audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly mpd mpc ncmpcpp
+sudo dnf in audacity-freeworld guvcview HandBrake-gui beets ffmpeg-free mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 gstreamer1-plugins-bad-freeworld gstreamer1-plugins-good-extras gstreamer1-plugins-ugly mpd mpc ncmpcpp
 ```
 
 ### Virtualization
 
 ```console
-sudo dnf install qemu libvirt virt-manager
+sudo dnf in qemu libvirt virt-manager
 ```
 
 ## Grant Access to libvirt Group for Virtualization
@@ -64,7 +64,7 @@ tools.
 ### Install and Enable
 
 ```console
-sudo dnf install flatpak
+sudo dnf in flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
