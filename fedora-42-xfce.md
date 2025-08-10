@@ -1,9 +1,10 @@
 # Post-Install Notes: Fedora 42 XFCE
 
-## Disable Installation of Weak Dependencies
+## Disable Installation of Weak Dependencies and Default to Yes with DNF
 
 ```console
 echo "install_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
+echo "defaultyes=True" | sudo tee -a /etc/dnf/dnf.conf
 ```
 
 ## Update System and Reboot
@@ -23,7 +24,7 @@ sudo dnf in https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 ### Core
 
 ```console
-sudo dnf in htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git onefetch ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc afetch conky rofi papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
+sudo dnf in htop nmap memtest86+ zsh vim-X11 tuned haveged uptimed git onefetch ncurses-term python3-pip rubygems argyllcms icc-profiles-basiccolor-printing2009 icc-profiles-openicc afetch conky rofi xfce4-docklike-plugin papirus-icon-theme epapirus-icon-theme numix-gtk-theme numix-icon-theme numix-icon-theme-square
 ```
 
 ### Graphics

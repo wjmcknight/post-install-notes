@@ -1,4 +1,4 @@
-# Devuan Daedalus Post-Install Notes
+# Devuan Daedalus Post-Install Notes: Xfce
 
 ## Enable contrib and non-free Repos
 
@@ -24,7 +24,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude sysv-rc-conf python3-pip ruby-rubygems hugo argyll icc-profiles conky-std rofi galculator gvfs-backends xfce4-indicator-plugin faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux-nonfree amd64-microcode htop nmap tmux memtest86+ plocate gamin zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude sysv-rc-conf python3-pip argyll icc-profiles conky-std rofi galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
 ```
 
 ### Graphics
@@ -42,7 +42,7 @@ sudo apt install chromium filezilla geary transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install asunder audacious audacity guvcview handbrake beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus
+sudo apt install asunder audacious audacity guvcview handbrake beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
 ```
 
 ### Virtualization
@@ -54,7 +54,7 @@ sudo apt install qemu-system libvirt-clients libvirt-daemon-system virt-manager
 ## Grant Access to libvirt Group for Virtualization
 
 ```console
-sudo usermod -aG libvirt yourusername
+sudo usermod -aG libvirt $(whoami)
 ```
 
 A logout is needed here to reflect the permission changes for running libvirt
@@ -71,10 +71,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed here before being able to install anything from Flathub.
 
-### Install Spotify
+### Install Spotify and Zola
 
 ```console
 flatpak install flathub com.spotify.Client
+flatpak install flathub org.getzola.zola
 ```
 
 ## Manage Services
