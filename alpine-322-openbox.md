@@ -26,7 +26,6 @@ doas setup-ntp openntpd
 ```console
 doas setup-xorg-base
 doas apk add dbus dbus-x11
-doas rc-update add dbus
 ```
 
 ## Install Some Packages
@@ -34,7 +33,7 @@ doas rc-update add dbus
 ### Core
 
 ```console
-doas apk add htop nano nmap tmux plocate zsh vim gvim cpufrequtils haveged uptimed openbox lightdm lightdm-gtk-greeter xfce4-settings xfce4-terminal thunar thunar-volman networkmanager networkmanager-wifi networkmanager-tui picom font-cantarell font-droid font-freefont font-noto nerd-fonts git py3-pip galculator gvfs-mtp adwaita-xfce-icon-theme papirus-icon-theme greybird-themes numix-themes numix-themes-gtk3 numix-icon-theme
+doas apk add htop nano nmap tmux plocate zsh vim gvim cpufrequtils haveged uptimed openbox obconf-qt lightdm lightdm-gtk-greeter elogind polkit-elogind xfce4-settings xfce4-terminal thunar thunar-volman networkmanager networkmanager-wifi networkmanager-tui picom font-cantarell font-dejavu font-droid font-freefont font-noto nerd-fonts git py3-pip galculator gvfs-mtp adw-gtk3 adwaita-xfce-icon-theme papirus-icon-theme greybird-themes
 ```
 
 ### Graphics
@@ -108,5 +107,7 @@ doas rc-update add cupsd
 doas rc-update add haveged
 doas rc-update add libvirtd
 doas rc-update add uptimed
-doas rc-update add lxdm
+doas rc-update add dbus
+doas rc-update add elogind
+doas rc-update add lightdm
 ```
