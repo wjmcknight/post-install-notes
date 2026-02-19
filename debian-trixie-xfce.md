@@ -49,7 +49,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip argyll icc-profiles conky-std rofi galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme
+sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git build-essential aptitude python3-pip argyll dmz-cursor-theme icc-profiles conky-std rofi galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
 ```
 
 ### Graphics
@@ -110,4 +110,10 @@ flatpak install flathub org.getzola.zola
 ```console
 sudo systemctl disable mpd --now
 sudo systemctl disable open-iscsi --now
+```
+
+## Set Default Cursor Theme
+
+```console
+sudo update-alternatives --config x-cursor-theme
 ```
