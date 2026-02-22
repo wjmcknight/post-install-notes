@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh vim vim-gtk3 uuid-runtime tuned haveged uptimed git build-essential python3-pip argyll icc-profiles 
+sudo apt install htop nmap tmux memtest86+ zsh bat fzf alacritty vim vim-gtk3 uuid-runtime tuned haveged uptimed git build-essential python3-pip argyll icc-profiles 
 ```
 
 ### Graphics
