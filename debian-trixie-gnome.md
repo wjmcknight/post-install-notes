@@ -61,7 +61,7 @@ sudo apt install create-resources gimp gimp-data-extras inkscape feh scrot libim
 ### Internet
 
 ```console
-sudo apt install chromium filezilla fragments
+sudo apt install chromium filezilla transmission-gtk
 ```
 
 ### Multimedia
