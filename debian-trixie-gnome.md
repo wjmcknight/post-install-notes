@@ -73,7 +73,7 @@ sudo apt install audacity brasero handbrake-gtk sound-juicer beets ffmpeg flac l
 ### Virtualization
 
 ```console
-sudo apt install gnome-boxes
+sudo apt install virt-manager
 ```
 
 ## Grant Access to libvirt Group for Virtualization
