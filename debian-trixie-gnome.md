@@ -49,7 +49,7 @@ sudo dpkg -C
 ### Core
 
 ```console
-sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf alacritty fastfetch gnome-shell-extension-apps-menu gnome-shell-extension-dash-to-panel gnome-shell-extension-manager gnome-shell-extension-user-theme gnome-shell-extension-workspace-indicator
+sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf alacritty fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme
 ```
 
 ### Graphics
@@ -104,6 +104,12 @@ flatpak install flathub org.getzola.zola
 ```
 
 ## Services
+
+### Enable
+
+```console
+sudo systemctl enable fstrim.timer --now
+```
 
 ### Disable
 
