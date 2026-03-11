@@ -33,23 +33,12 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-## Package Clean Up
-
-Especially because we're using Deb Multimedia, you'll probably get a message
-about some packages that can be removed. Let's do that then run `dpkg` as a
-sanity check.
-
-```console
-sudo apt autoremove
-sudo dpkg -C
-```
-
 ## Install Some Packages
 
 ### Core
 
 ```console
-sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf alacritty fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme
+sudo apt install bluez-firmware firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme
 ```
 
 ### Graphics
@@ -67,7 +56,7 @@ sudo apt install chromium filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install audacity brasero handbrake-gtk sound-juicer beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp 
+sudo apt install audacity brasero handbrake-gtk sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp 
 ```
 
 ### Virtualization
@@ -116,10 +105,4 @@ sudo systemctl enable fstrim.timer --now
 ```console
 sudo systemctl disable mpd --now
 sudo systemctl disable open-iscsi --now
-```
-
-## Set Default Cursor Theme
-
-```console
-sudo update-alternatives --config x-cursor-theme
 ```
