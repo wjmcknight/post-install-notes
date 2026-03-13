@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme mint-y-icons
+sudo apt install bluez-firmware firmware-linux amd64-microcode android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme mint-y-icons
 ```
 
 ### Graphics
