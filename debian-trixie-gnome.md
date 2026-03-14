@@ -65,7 +65,7 @@ sudo apt install audacity brasero handbrake-gtk sound-juicer beets python3-flask
 sudo apt install virt-manager
 ```
 
-## Grant Access to libvirt Group for Virtualization
+#### Grant Access to libvirt Group for Virtualization
 
 ```console
 sudo usermod -aG libvirt $(whoami)
@@ -74,9 +74,9 @@ sudo usermod -aG libvirt $(whoami)
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Flatpak
+### Flatpak
 
-### Install and Enable
+#### Install and Enable
 
 ```console
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -85,11 +85,19 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-### Install Spotify
+#### Install Spotify
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.getzola.zola
+```
+
+### LibreWolf
+
+```console
+sudo apt install extrepo
+sudo extrepo enable librewolf && sudo extrepo update librewolf
+sudo apt update && sudo apt install librewolf
 ```
 
 ## Services
