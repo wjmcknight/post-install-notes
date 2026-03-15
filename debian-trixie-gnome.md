@@ -38,13 +38,13 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux amd64-microcode android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme mint-y-icons
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch uuid-runtime gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme mint-y-icons
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras inkscape feh scrot libimage-exiftool-perl dcraw
+sudo apt install create-resources gimp gimp-data-extras inkscape feh libimage-exiftool-perl dcraw
 ```
 
 ### Internet
@@ -56,7 +56,7 @@ sudo apt install chromium filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install audacity brasero handbrake-gtk sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp 
+sudo apt install audacity brasero handbrake-gtk sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
 ```
 
 ### Virtualization
