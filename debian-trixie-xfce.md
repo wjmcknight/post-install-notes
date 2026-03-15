@@ -33,7 +33,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-## Install Some Packages
+## Software
 
 ### Core
 
