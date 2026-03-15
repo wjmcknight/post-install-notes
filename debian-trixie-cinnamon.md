@@ -33,23 +33,12 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-## Package Clean Up
-
-Especially because we're using Deb Multimedia, you'll probably get a message
-about some packages that can be removed. Let's do that then run `dpkg` as a
-sanity check.
-
-```console
-sudo apt autoremove
-sudo dpkg -C
-```
-
 ## Install Some Packages
 
 ### Core
 
 ```console
-sudo apt install firmware-linux amd64-microcode htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude python3-pip argyll icc-profiles bat fzf alacritty faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude python3-pip argyll icc-profiles bat fzf fastfetch faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
 ```
 
 ### Graphics
@@ -67,16 +56,16 @@ sudo apt install chromium filezilla
 ### Multimedia
 
 ```console
-sudo apt install audacity handbrake-gtk beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp 
+sudo apt install audacity handbrake-gtk beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
 ```
 
 ### Virtualization
 
 ```console
-sudo apt install qemu-system libvirt-clients libvirt-daemon-system virt-manager
+sudo apt install virt-manager
 ```
 
-## Grant Access to libvirt Group for Virtualization
+#### Grant Access to libvirt Group for Virtualization
 
 ```console
 sudo usermod -aG libvirt $(whoami)
@@ -85,9 +74,9 @@ sudo usermod -aG libvirt $(whoami)
 A logout is needed here to reflect the permission changes for running libvirt
 tools.
 
-## Flatpak
+### Flatpak
 
-### Install and Enable
+#### Install and Enable
 
 ```console
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -96,14 +85,28 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-### Install Spotify
+#### Install Spotify and Zola
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.getzola.zola
 ```
 
+### LibreWolf
+
+```console
+sudo apt install extrepo
+sudo extrepo enable librewolf && sudo extrepo update librewolf
+sudo apt update && sudo apt install librewolf
+```
+
 ## Services
+
+### Enable
+
+```console
+sudo systemctl enable fstrim.timer --now
+```
 
 ### Disable
 
