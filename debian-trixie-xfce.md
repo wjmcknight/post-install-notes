@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch dmz-cursor-theme conky-std rofi galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 tuned haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch conky-std rofi galculator gvfs-backends faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
 ```
 
 ### Graphics
@@ -113,10 +113,4 @@ sudo systemctl enable fstrim.timer --now
 ```console
 sudo systemctl disable mpd --now
 sudo systemctl disable open-iscsi --now
-```
-
-## Set Default Cursor Theme
-
-```console
-sudo update-alternatives --config x-cursor-theme
 ```
