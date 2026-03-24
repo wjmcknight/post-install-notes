@@ -56,7 +56,7 @@ sudo apt install chromium filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install audacity brasero handbrake-gtk sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
+sudo apt install amberol audacity brasero handbrake-gtk sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
 ```
 
 ### Virtualization
