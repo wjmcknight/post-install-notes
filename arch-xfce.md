@@ -6,7 +6,7 @@ Since these will potentially vary depending on my use, we start at the point
 of `pacstrap`:
 
 ```console
-pacstrap -K /mnt base linux-lts linux-firmware amd-ucode grub cronie nano sudo networkmanager xorg xf86-video-amdgpu vulkan-radeon lightdm lightdm-gtk-greeter xfce4 xfce4-goodies pipewire pipewire-pulse wireplumber pavucontrol network-manager-applet ttf-dejavu ttf-droid gnu-free-fonts ttf-input-nerd noto-fonts ttf-roboto ttf-croscore ttf-liberation cantarell-fonts
+pacstrap -K /mnt base linux-lts linux-firmware amd-ucode grub cronie nano sudo networkmanager xorg xf86-video-amdgpu vulkan-radeon lightdm lightdm-gtk-greeter xfce4 xfce4-goodies pipewire pipewire-pulse wireplumber pavucontrol network-manager-applet cups system-config-printer ttf-dejavu ttf-droid gnu-free-fonts ttf-input-nerd noto-fonts ttf-roboto ttf-croscore ttf-liberation cantarell-fonts
 genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/Canada/Eastern /etc/localtime
@@ -19,12 +19,16 @@ passwd
 useradd -m -G wheel -s /usr/bin/bash -c "Your Name" youruser
 passwd youruser
 visudo
+systemctl enable avahi-daemon
 systemctl enable cronie
-systemctl enable NetworkManager
+systemctl enable cups
+systemctl enable cups-browsed
 systemctl enable lightdm
+systemctl enable NetworkManager
 systemctl enable systemd-timesyncd
 grub-install --target=i386-pc /dev/vda
 grub-mkconfig -o /boot/grub/grub.cfg
+exit
 ```
 
 ## Software
@@ -51,6 +55,12 @@ sudo pacman -S chromium firefox filezilla transmission-gtk
 
 ```console
 sudo pacman -S tenacity guvcview handbrake pragha beets python-flask mpv wavegain yt-dlp gst-plugins-bad gst-plugins-ugly mpd mpc ncmpcpp
+```
+
+### Office
+
+```console
+sudo pacman -S libreoffice-still xreader
 ```
 
 ### Virtualization
