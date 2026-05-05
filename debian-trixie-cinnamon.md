@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude python3-pip argyll icc-profiles bat fzf fastfetch faba-icon-theme moka-icon-theme papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh vim vim-gtk3 haveged uptimed git aptitude python3-pip argyll icc-profiles alacritty bat fzf fastfetch numix-gtk-theme numix-icon-theme
 ```
 
 ### Graphics
@@ -85,11 +85,12 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-#### Install Spotify and Zola
+#### Install Spotify, Zola, and LocalSend
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.getzola.zola
+flatpak install flathub org.localsend.localsend_app
 ```
 
 ### LibreWolf
