@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh vim vim-gtk3 haveged uptimed git build-essential python3-pip argyll icc-profiles bat fzf 
+sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git python3-pip argyll icc-profiles alacritty bat fzf
 ```
 
 ### Graphics
@@ -43,11 +43,12 @@ tools.
 
 ### Flatpak
 
-#### Install Spotify and Zola
+#### Install Spotify, Zola, and LocalSend
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.getzola.zola
+flatpak install flathub org.localsend.localsend_app
 ```
 
 ### LibreWolf
