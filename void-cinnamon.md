@@ -60,7 +60,7 @@ sudo xbps-install eog gimp inkscape shotwell feh exiftool dcraw
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine firefox-esr filezilla transmission-gtk
+sudo xbps-install chromium chromium-widevine firefox-esr filezilla thunderbird transmission-gtk
 ```
 
 ### Multimedia
