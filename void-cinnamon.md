@@ -1,16 +1,10 @@
 # Void Linux Post-Install Notes: Cinnamon
 
-## Switch to Closer Mirror
+## Switch to Better Mirror
 
 ```console
 sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
 sudo sed -i 's|repo-default.voidlinux.org|mirrors.summithq.com/voidlinux|' /etc/xbps.d/00-repository-main.conf
-```
-
-## Update System
-
-```console
-sudo xbps-install -Su
 ```
 
 ## Add nonfree Repo, Switch Mirror, Sync
@@ -27,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-gtk-greeter pulseaudio avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-slick-greeter pulseaudio avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS Kernel
@@ -40,7 +34,7 @@ echo "ignorepkg=linux" | sudo tee /etc/xbps.d/20-lts.conf
 After rebooting to the LTS kernel we can remove the default kernel:
 
 ```console
-sudo xbps-remove linux
+sudo xbps-remove linux linux6.18
 sudo vkpurge rm all
 ```
 
@@ -49,6 +43,12 @@ sudo vkpurge rm all
 ```console
 sudo sed -i 's|loglevel=4|loglevel=4 apparmor=1 security=apparmor|' /etc/default/grub
 sudo update-grub
+```
+
+#### Enable lightdm-slick-greeter
+
+```console
+sudo sed -i 's|#greeter-session=example-gtk-gnome|greeter-session=slick-greeter|' /etc/lightdm/lightdm.conf
 ```
 
 ### Graphics
@@ -66,7 +66,7 @@ sudo xbps-install chromium chromium-widevine firefox-esr filezilla transmission-
 ### Multimedia
 
 ```console
-sudo xbps-install audacity brasero celluloid cheese deadbeef handbrake sound-juicer beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install audacity brasero celluloid cheese deadbeef sound-juicer beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
