@@ -1,13 +1,13 @@
 # Void Linux Post-Install Notes: Cinnamon
 
-## Switch to Better Mirror
+## Switch to faster mirror
 
 ```console
 sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
 sudo sed -i 's|repo-default.voidlinux.org|mirrors.summithq.com/voidlinux|' /etc/xbps.d/00-repository-main.conf
 ```
 
-## Add nonfree Repo, Switch Mirror, Sync
+## Add nonfree repo, switch mirror, sync
 
 ```console
 sudo xbps-install void-repo-nonfree
@@ -24,7 +24,7 @@ sudo xbps-install -S
 sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator alacritty bat fzf fastfetch gvfs-mtp
 ```
 
-#### Enable LTS Kernel
+#### Enable LTS kernel
 
 ```console
 sudo xbps-pkgdb -m manual linux-base
@@ -96,7 +96,7 @@ sudo xbps-install libreoffice
 sudo xbps-install qemu-system-amd64 libvirt virt-manager
 ```
 
-#### Grant Access to libvirt Group for Virtualization
+#### Grant access to libvirt group
 
 ```console
 sudo usermod -aG libvirt $(whoami)
@@ -107,7 +107,7 @@ tools.
 
 ### Flatpak
 
-#### Install and Enable
+#### Install and enable
 
 ```console
 sudo xbps-install flatpak xdg-desktop-portal-gtk
@@ -138,8 +138,8 @@ sudo rm /var/service/dhcpcd
 ```
 
 If using a laptop or wireless in generate that was enabled during
-installation, you'll want to disable `wpa_supplicant` since it will also
-clash with `NetworkManager`:
+installation, you'll want to disable `wpa_supplicant` as it will clash
+with `NetworkManager`:
 
 ```console
 sudo rm /var/service/wpa_supplicant
