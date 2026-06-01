@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-slick-greeter pulseaudio avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS Kernel
@@ -51,6 +51,15 @@ sudo update-grub
 sudo sed -i 's|#greeter-session=example-gtk-gnome|greeter-session=slick-greeter|' /etc/lightdm/lightdm.conf
 ```
 
+#### Enable Pipewire
+
+```console
+sudo mkdir -p /etc/pipewire/pipewire.conf.d
+sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
+sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
+sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
+```
+
 #### Add user to `network` group to control NetworkManager
 
 ```console
@@ -72,7 +81,7 @@ sudo xbps-install chromium chromium-widevine firefox-esr filezilla thunderbird t
 ### Multimedia
 
 ```console
-sudo xbps-install audacity brasero celluloid cheese deadbeef sound-juicer beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install audacity celluloid cheese deadbeef beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
@@ -126,6 +135,14 @@ flatpak install flathub io.gitlab.librewolf-community
 
 ```console
 sudo rm /var/service/dhcpcd
+```
+
+If using a laptop or wireless in generate that was enabled during
+installation, you'll want to disable `wpa_supplicant` since it will also
+clash with `NetworkManager`:
+
+```console
+sudo rm /var/service/wpa_supplicant
 ```
 
 ### Enable
