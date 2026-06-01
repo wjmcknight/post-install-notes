@@ -51,6 +51,12 @@ sudo update-grub
 sudo sed -i 's|#greeter-session=example-gtk-gnome|greeter-session=slick-greeter|' /etc/lightdm/lightdm.conf
 ```
 
+#### Add user to `network` group to control NetworkManager
+
+```console
+sudo usermod -aG network $(whoami)
+```
+
 ### Graphics
 
 ```console
