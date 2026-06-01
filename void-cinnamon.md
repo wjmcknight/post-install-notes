@@ -137,7 +137,7 @@ flatpak install flathub io.gitlab.librewolf-community
 sudo rm /var/service/dhcpcd
 ```
 
-If using a laptop or wireless in generate that was enabled during
+If using a laptop or wireless in general that was enabled during
 installation, you'll want to disable `wpa_supplicant` as it will clash
 with `NetworkManager`:
 
