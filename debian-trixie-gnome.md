@@ -71,8 +71,8 @@ sudo apt install virt-manager
 sudo usermod -aG libvirt $(whoami)
 ```
 
-A logout is needed here to reflect the permission changes for running libvirt
-tools.
+A logout is needed here to reflect the permission changes for running
+libvirt tools.
 
 ### Flatpak
 
