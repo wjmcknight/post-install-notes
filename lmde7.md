@@ -1,11 +1,11 @@
-# LMDE 7 
+# LMDE 7 Post-Install Notes
 
 ## Software
 
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git python3-pip argyll icc-profiles alacritty bat fzf
+sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git python3-pipx argyll icc-profiles alacritty bat fzf
 ```
 
 ### Graphics
@@ -23,7 +23,7 @@ sudo apt install chromium filezilla
 ### Multimedia
 
 ```console
-sudo apt install audacity cheese handbrake sound-juicer beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 mpd mpc ncmpcpp
+sudo apt install audacity cheese beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 mpd mpc ncmpcpp
 ```
 
 ### Virtualization
@@ -32,22 +32,21 @@ sudo apt install audacity cheese handbrake sound-juicer beets python3-flask ffmp
 sudo apt install virt-manager 
 ```
 
-#### Grant Access to libvirt Group for Virtualization
+#### Grant access to libvirt group
 
 ```console
 sudo usermod -aG libvirt $(whoami)
 ```
 
-A logout is needed here to reflect the permission changes for running libvirt
-tools.
+A logout is needed here to reflect the permission changes for running
+libvirt tools.
 
 ### Flatpak
 
-#### Install Spotify, Zola, and LocalSend
+#### Install Spotify and LocalSend
 
 ```console
 flatpak install flathub com.spotify.Client
-flatpak install flathub org.getzola.zola
 flatpak install flathub org.localsend.localsend_app
 ```
 
@@ -75,7 +74,7 @@ sudo systemctl disable openvpn --now
 sudo systemctl disable ufw --now
 ```
 
-## Disable `sudo` Password Feedback
+## Disable `sudo` password feedback
 
 ```console
 sudo cp /etc/sudoers.d/0pwfeedback /etc/sudoers.d/1nopwfeedback
