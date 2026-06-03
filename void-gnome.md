@@ -3,7 +3,7 @@
 ## Switch to faster mirror 
 
 ```console
-sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d
+sudo cp /usr/share/xbps.d/00-repository-main.conf /etc/xbps.d/
 sudo sed -i 's|repo-default.voidlinux.org|mirrors.summithq.com/voidlinux|' /etc/xbps.d/00-repository-main.conf
 ```
 
@@ -11,7 +11,7 @@ sudo sed -i 's|repo-default.voidlinux.org|mirrors.summithq.com/voidlinux|' /etc/
 
 ```console
 sudo xbps-install void-repo-nonfree
-sudo cp /usr/share/xbps.d/10-repository-nonfree.conf /etc/xbps.d
+sudo cp /usr/share/xbps.d/10-repository-nonfree.conf /etc/xbps.d/
 sudo sed -i 's|repo-default.voidlinux.org|mirrors.summithq.com/voidlinux|' /etc/xbps.d/10-repository-nonfree.conf
 sudo xbps-install -S
 ```
@@ -69,7 +69,7 @@ sudo xbps-install gimp inkscape feh exiftool dcraw
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine firefox-esr gnome-browser-connector filezilla transmission-gtk
+sudo xbps-install chromium chromium-widevine firefox-esr geary gnome-browser-connector filezilla transmission-gtk
 ```
 
 ### Multimedia
