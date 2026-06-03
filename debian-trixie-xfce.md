@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential python3-pip argyll icc-profiles bat fzf fastfetch galculator gvfs-backends mint-y-icons papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential python3-pipx argyll icc-profiles bat fzf fastfetch galculator gvfs-backends mint-y-icons papirus-icon-theme greybird-gtk-theme numix-gtk-theme numix-icon-theme
 ```
 
 ### Graphics
