@@ -1,12 +1,12 @@
 # Debian Trixie Post-Install Notes: Cinnamon
 
-## Enable contrib and non-free Repos
+## Enable contrib and non-free repos
 
 ```console
 sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
 ```
 
-## Switch Security Repo to Better Mirror
+## Switch security repo to better mirror
 
 ```console
 sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/sources.list
@@ -26,7 +26,7 @@ echo -e "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ 
 echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
-## Update System
+## Update system
 
 ```console
 sudo apt update
@@ -56,7 +56,7 @@ sudo apt install chromium filezilla
 ### Multimedia
 
 ```console
-sudo apt install audacity handbrake-gtk beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
+sudo apt install audacity beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
 ```
 
 ### Virtualization
@@ -65,18 +65,18 @@ sudo apt install audacity handbrake-gtk beets python3-flask ffmpeg flac lame mpg
 sudo apt install virt-manager
 ```
 
-#### Grant Access to libvirt Group for Virtualization
+#### Grant access to libvirt group
 
 ```console
 sudo usermod -aG libvirt $(whoami)
 ```
 
-A logout is needed here to reflect the permission changes for running libvirt
-tools.
+A logout is needed here to reflect the permission changes for running
+libvirt tools.
 
 ### Flatpak
 
-#### Install and Enable
+#### Install and enable
 
 ```console
 sudo apt install flatpak gnome-software-plugin-flatpak
@@ -85,11 +85,10 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-#### Install Spotify, Zola, and LocalSend
+#### Install Spotify and LocalSend
 
 ```console
 flatpak install flathub com.spotify.Client
-flatpak install flathub org.getzola.zola
 flatpak install flathub org.localsend.localsend_app
 ```
 
@@ -116,7 +115,7 @@ sudo systemctl disable mpd --now
 sudo systemctl disable open-iscsi --now
 ```
 
-## Set Default Cursor Theme
+## Set default cursor theme
 
 ```console
 sudo update-alternatives --config x-cursor-theme
