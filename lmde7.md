@@ -5,13 +5,13 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git python3-pipx argyll icc-profiles alacritty bat fzf
+sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git pipx argyll icc-profiles alacritty bat fzf
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras inkscape feh scrot libimage-exiftool-perl
+sudo apt install create-resources gimp gimp-data-extras inkscape libimage-exiftool-perl
 ```
 
 ### Internet
@@ -63,15 +63,15 @@ sudo apt update && sudo apt install librewolf
 ### Enable
 
 ```console
-sudo systemctl enable fstrim.timer --now
+sudo systemctl enable --now fstrim.timer
 ```
 
 ### Disable
 
 ```console
-sudo systemctl disable mpd --now
-sudo systemctl disable openvpn --now
-sudo systemctl disable ufw --now
+sudo systemctl disable --now mpd
+sudo systemctl disable --now openvpn
+sudo systemctl disable --now ufw
 ```
 
 ## Disable `sudo` password feedback
