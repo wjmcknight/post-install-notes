@@ -21,14 +21,14 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
 
 ```console
 sudo xbps-pkgdb -m manual linux-base
-echo "ignorepkg=linux" | sudo tee /etc/xbps.d/20-lts.conf
+echo "ignorepkg=linux" | sudo tee /etc/xbps.d/20-linux-lts.conf
 ```
 
 After rebooting to the LTS kernel we can remove the default kernel:
@@ -66,10 +66,17 @@ sudo ln -s /usr/share/applications/pipewire.desktop /etc/xdg/autostart/
 sudo usermod -aG network $(whoami)
 ```
 
+#### Set default cursor theme
+
+```console
+sudo mkdir -p /usr/share/icons/default
+echo -e "[Icon Theme]\nInherits=Vanilla-DMZ-AA" | sudo tee /usr/share/icons/default/index.theme
+```
+
 ### Graphics
 
 ```console
-sudo xbps-install eog gimp inkscape shotwell feh exiftool dcraw
+sudo xbps-install eog gimp inkscape shotwell exiftool dcraw
 ```
 
 ### Internet
@@ -152,7 +159,11 @@ sudo ln -s /etc/sv/avahi-daemon /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
+sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/lightdm /var/service/
 sudo ln -s /etc/sv/haveged /var/service/
 sudo ln -s /etc/sv/uptimed /var/service/
+sudo ln -s /etc/sv/libvirtd /var/service/
+sudo ln -s /etc/sv/virtlockd /var/service/
+sudo ln -s /etc/sv/virtlogd /var/service/
 ```
