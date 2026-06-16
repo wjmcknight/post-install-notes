@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg gnome pipewire avahi cronie cups system-config-printer system-config-printer-udev htop ncurses-term nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg gnome pipewire avahi cronie cups cups-browsed system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -63,13 +63,13 @@ sudo usermod -aG network $(whoami)
 ### Graphics
 
 ```console
-sudo xbps-install gimp inkscape feh exiftool dcraw
+sudo xbps-install gimp inkscape exiftool dcraw
 ```
 
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine firefox-esr geary gnome-browser-connector filezilla transmission-gtk
+sudo xbps-install chromium chromium-widevine firefox-esr filezilla geary gnome-browser-connector transmission-gtk
 ```
 
 ### Multimedia
@@ -146,7 +146,18 @@ sudo ln -s /etc/sv/avahi-daemon /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
+sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/gdm /var/service/
 sudo ln -s /etc/sv/haveged /var/service/
 sudo ln -s /etc/sv/uptimed /var/service/
+sudo ln -s /etc/sv/libvirtd /var/service/
+sudo ln -s /etc/sv/virtlockd /var/service/
+sudo ln -s /etc/sv/virtlogd /var/service/
+```
+
+### Enable fstrim for SSDs
+
+```console
+echo -e '#!/usr/bin/sh\n\nfstrim -A' | sudo tee /etc/cron.weekly/fstrim
+sudo chmod 755 /etc/cron.weekly/fstrim
 ```
