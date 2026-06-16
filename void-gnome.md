@@ -28,7 +28,7 @@ sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-r
 
 ```console
 sudo xbps-pkgdb -m manual linux-base
-echo "ignorepkg=linux" | sudo tee /etc/xbps.d/20-lts.conf
+echo "ignorepkg=linux" | sudo tee /etc/xbps.d/20-linux-lts.conf
 ```
 
 After rebooting to the LTS kernel we can remove the default kernel:
