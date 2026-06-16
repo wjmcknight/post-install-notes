@@ -167,3 +167,10 @@ sudo ln -s /etc/sv/libvirtd /var/service/
 sudo ln -s /etc/sv/virtlockd /var/service/
 sudo ln -s /etc/sv/virtlogd /var/service/
 ```
+
+### Enable fstrim for SSDs
+
+```console
+echo -e '#!/usr/bin/sh\n\nfstrim -A' | sudo tee /etc/cron.weekly/fstrim
+sudo chmod 755 /etc/cron.weekly/fstrim
+```
