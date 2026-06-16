@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters foomatic-db foomatic-db-engine foomatic-db-nonfree system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
