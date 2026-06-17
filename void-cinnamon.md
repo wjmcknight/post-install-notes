@@ -100,7 +100,7 @@ sudo xbps-install libreoffice
 ### Virtualization
 
 ```console
-sudo xbps-install qemu-system-amd64 libvirt virt-manager
+sudo xbps-install qemu-system-amd64 qemu-img qemu-tools libvirt virt-manager
 ```
 
 #### Grant access to libvirt group
