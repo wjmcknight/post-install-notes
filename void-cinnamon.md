@@ -88,7 +88,7 @@ sudo xbps-install chromium chromium-widevine firefox-esr filezilla thunderbird t
 ### Multimedia
 
 ```console
-sudo xbps-install audacity celluloid cheese deadbeef beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install audacity celluloid cheese amberol beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
