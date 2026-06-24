@@ -38,13 +38,13 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude python3-pipx argyll icc-profiles alacritty bat fzf fastfetch mint-y-icons
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude pipx alacritty bat fzf fastfetch mint-y-icons
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras inkscape feh scrot libimage-exiftool-perl dcraw
+sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw
 ```
 
 ### Internet
@@ -56,7 +56,7 @@ sudo apt install chromium filezilla
 ### Multimedia
 
 ```console
-sudo apt install audacity beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi mpd mpc ncmpcpp
+sudo apt install amberol audacity beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg 
 ```
 
 ### Virtualization
@@ -105,14 +105,15 @@ sudo apt update && sudo apt install librewolf
 ### Enable
 
 ```console
-sudo systemctl enable fstrim.timer --now
+sudo systemctl enable --now fstrim.timer
 ```
 
 ### Disable
 
 ```console
-sudo systemctl disable mpd --now
-sudo systemctl disable open-iscsi --now
+sudo systemctl disable --now blueman-mechanism
+sudo systemctl disable --now bluetooth
+sudo systemctl disable --now open-iscsi
 ```
 
 ## Set default cursor theme
