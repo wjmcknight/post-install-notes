@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -88,7 +88,7 @@ sudo xbps-install chromium chromium-widevine firefox-esr filezilla thunderbird t
 ### Multimedia
 
 ```console
-sudo xbps-install audacity celluloid cheese amberol beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install audacity celluloid cheese amberol beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio
 ```
 
 ### Office
@@ -117,10 +117,10 @@ tools.
 #### Install and enable
 
 ```console
-sudo xbps-install flatpak xdg-desktop-portal-gtk
+sudo xbps-install flatpak xdg-desktop-portal-gtk xdg-user-dirs-gtk
 ```
 
-After rebooting we run this command since at this point we're still
+fter rebooting we run this command since at this point we're still
 in the console without D-Bus running yet:
 
 ```console
