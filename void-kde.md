@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xorg kde-plasma kde-baseapps spectacle kcalc kwalletmanager kwrite NetworkManager avahi cronie cups cups-browsed cups-filters nss-mdns htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx alacritty bat fzf fastfetch
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg kde-plasma kde-baseapps spectacle kcalc kwalletmanager kwrite NetworkManager avahi cronie cups cups-browsed cups-filters nss-mdns htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx alacritty bat fzf fastfetch
 ```
 
 #### Enable LTS kernel
