@@ -76,7 +76,7 @@ echo -e "[Icon Theme]\nInherits=Vanilla-DMZ-AA" | sudo tee /usr/share/icons/defa
 ### Graphics
 
 ```console
-sudo xbps-install eog gimp inkscape shotwell exiftool dcraw
+sudo xbps-install eog gimp shotwell exiftool dcraw
 ```
 
 ### Internet

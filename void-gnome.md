@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg gnome pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx argyllcms alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg gnome pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -63,7 +63,7 @@ sudo usermod -aG network $(whoami)
 ### Graphics
 
 ```console
-sudo xbps-install gimp inkscape exiftool dcraw
+sudo xbps-install gimp exiftool dcraw
 ```
 
 ### Internet
@@ -75,7 +75,7 @@ sudo xbps-install chromium chromium-widevine firefox-esr filezilla geary gnome-b
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install amberol audacity beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio
 ```
 
 ### Office
@@ -104,7 +104,7 @@ tools.
 #### Install and enable
 
 ```console
-sudo xbps-install flatpak gnome-software
+sudo xbps-install flatpak xdg-user-dirs-gtk
 ```
 
 After rebooting we run this command since at this point we're still
