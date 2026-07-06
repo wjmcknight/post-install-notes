@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx gedit seahorse gnome-calculator gnome-keyring alacritty bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -117,7 +117,7 @@ tools.
 #### Install and enable
 
 ```console
-sudo xbps-install flatpak xdg-desktop-portal-gtk xdg-user-dirs-gtk
+sudo xbps-install flatpak xdg-desktop-portal-gtk
 ```
 
 fter rebooting we run this command since at this point we're still
