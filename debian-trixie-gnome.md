@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential pipx alacritty bat fzf fastfetch uuid-runtime gnome-shell-extension-dashtodock gnome-shell-extension-manager gnome-shell-extension-user-theme mint-y-icons
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential pipx bat fzf fastfetch uuid-runtime gnome-shell-extension-dashtodock gnome-shell-extension-manager
 ```
 
 ### Graphics
@@ -50,7 +50,7 @@ sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl d
 ### Internet
 
 ```console
-sudo apt install chromium filezilla transmission-gtk
+sudo apt install filezilla geary transmission-gtk
 ```
 
 ### Multimedia
@@ -105,11 +105,12 @@ sudo apt update && sudo apt install librewolf
 ### Enable
 
 ```console
-sudo systemctl enable fstrim.timer --now
+sudo systemctl enable --now fstrim.timer
 ```
 
 ### Disable
 
 ```console
-sudo systemctl disable open-iscsi --now
+sudo systemctl disable --now bluetooth
+sudo systemctl disable --now open-iscsi
 ```

@@ -50,7 +50,7 @@ sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl d
 ### Internet
 
 ```console
-sudo apt install chromium filezilla transmission-gtk
+sudo apt install filezilla transmission-gtk
 ```
 
 ### Multimedia
@@ -105,13 +105,13 @@ sudo apt update && sudo apt install librewolf
 ### Enable
 
 ```console
-sudo systemctl enable fstrim.timer --now
+sudo systemctl enable --now fstrim.timer
 ```
 
 ### Disable
 
 ```console
-sudo systemctl disable open-iscsi --now
+sudo systemctl disable --now open-iscsi
 ```
 
 ## Set default cursor theme
