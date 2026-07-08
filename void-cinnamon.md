@@ -82,7 +82,7 @@ sudo xbps-install eog gimp shotwell exiftool dcraw
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine firefox-esr filezilla thunderbird transmission-gtk
+sudo xbps-install firefox-esr filezilla thunderbird transmission-gtk
 ```
 
 ### Multimedia

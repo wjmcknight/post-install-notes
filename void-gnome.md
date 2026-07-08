@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xdg-user-dirs-gtk gnome pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx alacritty bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xdg-user-dirs-gtk gnome pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx gnome-terminal bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -69,7 +69,7 @@ sudo xbps-install gimp exiftool dcraw
 ### Internet
 
 ```console
-sudo xbps-install chromium chromium-widevine firefox-esr filezilla geary gnome-browser-connector transmission-gtk
+sudo xbps-install firefox-esr filezilla geary gnome-browser-connector transmission-gtk
 ```
 
 ### Multimedia
