@@ -21,7 +21,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xdg-user-dirs-gtk gnome pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx gnome-terminal bat fzf fastfetch gvfs-mtp
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules xtools base-devel xorg xdg-user-dirs-gtk gnome gnome-terminal extension-manager pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop ncurses-term nano nmap tmux memtest86+ plocate zsh neovim haveged uptimed git python3-pipx bat fzf fastfetch gvfs-mtp
 ```
 
 #### Enable LTS kernel
@@ -75,7 +75,7 @@ sudo xbps-install firefox-esr filezilla geary gnome-browser-connector transmissi
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio
+sudo xbps-install amberol audacity cheese beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp cmus cmus-faad cmus-ffmpeg cmus-flac cmus-pulseaudio
 ```
 
 ### Office
