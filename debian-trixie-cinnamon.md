@@ -50,7 +50,7 @@ sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl d
 ### Internet
 
 ```console
-sudo apt install chromium filezilla
+sudo apt install filezilla
 ```
 
 ### Multimedia
