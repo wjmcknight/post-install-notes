@@ -5,25 +5,25 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git pipx argyll icc-profiles alacritty bat fzf
+sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git pipx bat fzf
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras inkscape libimage-exiftool-perl
+sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl
 ```
 
 ### Internet
 
 ```console
-sudo apt install chromium filezilla
+sudo apt install filezilla
 ```
 
 ### Multimedia
 
 ```console
-sudo apt install audacity cheese beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 mpd mpc ncmpcpp
+sudo apt install audacity cheese beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 cmus cmus-plugin-ffmpeg
 ```
 
 ### Virtualization
