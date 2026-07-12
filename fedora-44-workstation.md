@@ -71,9 +71,10 @@ libvirt tools.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-#### Install Spotify, LocalSend, and Extension Manager
+#### Install Amberol, Spotify, LocalSend, and Extension Manager
 
 ```console
+flatpak install flathub io.bassi.Amberol
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
 flatpak install flathub com.mattjakeman.ExtensionManager
