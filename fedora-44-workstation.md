@@ -13,6 +13,8 @@ echo -e "defaultyes=True\ninstall_weak_deps=False" | sudo tee -a /etc/dnf/dnf.co
 sudo dnf update
 ```
 
+It's probably a good idea to reboot after updating here.
+
 ## Enable RPM Fusion and switch to non-free ffmpeg
 
 ```console
