@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential pipx bat fzf fastfetch uuid-runtime gnome-shell-extension-manager
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim haveged uptimed git aptitude build-essential pipx bat fzf fastfetch uuid-runtime gnome-shell-extension-manager mint-y-icons
 ```
 
 ### Graphics
@@ -56,7 +56,7 @@ sudo apt install filezilla geary transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install amberol audacity beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg 
+sudo apt install amberol audacity blanket beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg 
 ```
 
 ### Virtualization
