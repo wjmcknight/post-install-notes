@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim git python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim git python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
 ```
 
 #### Set the LTS kernel as default kernel
