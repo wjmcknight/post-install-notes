@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh neovim haveged uptimed git pipx bat fzf
+sudo apt install htop nmap tmux memtest86+ zsh neovim uptimed git pipx bat fzf
 ```
 
 ### Graphics
