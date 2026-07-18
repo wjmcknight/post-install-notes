@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim uptimed git aptitude pipx bat fzf fastfetch mint-y-icons dmz-cursor-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim uptimed git aptitude pipx bat fzf fastfetch alacritty mint-y-icons dmz-cursor-theme
 ```
 
 ### Graphics
@@ -79,7 +79,7 @@ libvirt tools.
 #### Install and enable
 
 ```console
-sudo apt install flatpak gnome-software-plugin-flatpak
+sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 

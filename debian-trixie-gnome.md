@@ -79,7 +79,7 @@ libvirt tools.
 #### Install and enable
 
 ```console
-sudo apt install flatpak gnome-software-plugin-flatpak
+sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
