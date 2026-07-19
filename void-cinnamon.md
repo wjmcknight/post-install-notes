@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim git python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chronyd cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim git python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
 ```
 
 #### Set the LTS kernel as default kernel
@@ -60,6 +60,19 @@ sudo mkdir /usr/share/icons/default
 echo -e "[Icon Theme]\nInherits=Vanilla-DMZ-AA" | sudo tee /usr/share/icons/default/index.theme
 ```
 
+#### ThinkPad T14 Gen 3 touchpad tweak
+
+When installing the `xorg` metapackage it includes both libinput and
+synaptics drivers with synaptics taking precedence over libinput. We 
+switch to libinput since synaptics behaviour feels clunky where libinput
+is what Debian and Fedora default to and is a much nicer in terms of 
+usability.
+
+```console
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/
+```
+
 ### Graphics
 
 ```console
@@ -75,7 +88,7 @@ sudo xbps-install firefox-esr geary filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity blanket celluloid beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyedD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
+sudo xbps-install amberol audacity blanket celluloid beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
 ```
 
 ### Office
@@ -142,6 +155,7 @@ sudo rm /var/service/wpa_supplicant
 ```console
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
+sudo ln -s /etc/sv/chronyd /var/service/
 sudo ln -s /etc/sv/cronie /var/service/
 sudo ln -s /etc/sv/avahi-daemon /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
