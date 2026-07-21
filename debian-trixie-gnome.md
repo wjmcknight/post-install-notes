@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim uptimed curl git aptitude build-essential pipx bat fzf fastfetch uuid-runtime gnome-shell-extension-manager mint-y-icons
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim uptimed curl git aptitude build-essential pipx bat fzf fastfetch uuid-runtime gnome-shell-extension-manager alacritty mint-y-icons
 ```
 
 ### Graphics
