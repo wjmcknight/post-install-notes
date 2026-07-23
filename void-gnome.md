@@ -114,12 +114,13 @@ after a reboot.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-#### Install LibreWolf, Spotify, and LocalSend
+#### Install LibreWolf, Spotify, LocalSend, and Extension Manager
 
 ```console
 flatpak install flathub io.gitlab.librewolf-community
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
+flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
 ## Services
