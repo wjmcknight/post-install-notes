@@ -44,7 +44,7 @@ sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw
+sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw imagemagick
 ```
 
 ### Internet
