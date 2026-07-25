@@ -44,7 +44,7 @@ sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw
+sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw webp imagemagick
 ```
 
 ### Internet
@@ -56,7 +56,7 @@ sudo apt install filezilla thunderbird transmission-gtk
 ### Multimedia
 
 ```console
-sudo apt install audacity deadbeef guvcview beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg
+sudo apt install audacity deadbeef guvcview beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg
 ```
 
 ### Virtualization
