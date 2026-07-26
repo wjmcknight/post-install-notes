@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim git curl wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
 ```
 
 #### Set the LTS kernel as default kernel
@@ -88,7 +88,7 @@ sudo xbps-install firefox-esr geary filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity blanket celluloid beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
+sudo xbps-install amberol audacity blanket celluloid beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
 ```
 
 ### Office

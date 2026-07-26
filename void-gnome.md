@@ -75,7 +75,7 @@ sudo xbps-install firefox-esr geary filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity blanket totem beets python3-Flask ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install amberol audacity blanket totem beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
