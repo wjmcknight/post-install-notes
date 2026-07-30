@@ -3,7 +3,7 @@
 ## Set hostname
 
 ```console
-sudo hostnamectl hostname yourhostname
+sudo hostnamectl hostname yourhostname.localdomain
 ```
 
 ## Set a few dnf settings
@@ -54,7 +54,14 @@ sudo dnf in filezilla geary transmission-gtk
 ### Multimedia
 
 ```console
-sudo dnf in audacity-freeworld beets flac lame mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 yt-dlp cmus 
+sudo dnf in audacity-freeworld beets flac lame mpg123 mpg123-plugins-pulseaudio mpv normalize python3-eyed3 yt-dlp cmus gstreamer1-plugin-openh264 mozilla-openh264 
+```
+
+Extra step for the ThinkPad T14 Gen 3 which uses Intel graphics:
+
+```console
+sudo dnf in ffmpeg-libs libva libva-utils
+sudo dnf swap libva-intel-media-driver intel-media-driver --allowerasing
 ```
 
 ### Virtualization
