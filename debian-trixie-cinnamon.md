@@ -56,7 +56,7 @@ sudo apt install filezilla
 ### Multimedia
 
 ```console
-sudo apt install amberol audacity blanket beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg
+sudo apt install amberol audacity beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi cmus cmus-plugin-ffmpeg
 ```
 
 ### Virtualization
