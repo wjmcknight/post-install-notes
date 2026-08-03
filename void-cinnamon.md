@@ -76,7 +76,7 @@ sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/
 ### Graphics
 
 ```console
-sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools
+sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools ImageMagick
 ```
 
 ### Internet
@@ -88,7 +88,7 @@ sudo xbps-install firefox-esr geary filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity blanket celluloid beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
+sudo xbps-install amberol audacity celluloid beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
 ```
 
 ### Office

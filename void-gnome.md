@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xdg-user-dirs-gtk gnome pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-screenshot
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools mesa-dri xdg-user-dirs-gtk gnome pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-screenshot extension-manager
 ```
 
 #### Set the LTS kernel as default kernel
@@ -63,7 +63,7 @@ sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/
 ### Graphics
 
 ```console
-sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools
+sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools ImageMagick
 ```
 
 ### Internet
@@ -75,7 +75,7 @@ sudo xbps-install firefox-esr geary filezilla transmission-gtk
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity blanket totem beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install amberol audacity totem beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
@@ -114,13 +114,12 @@ after a reboot.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-#### Install LibreWolf, Spotify, LocalSend, and Extension Manager
+#### Install LibreWolf, Spotify, and LocalSend
 
 ```console
 flatpak install flathub io.gitlab.librewolf-community
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
-flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
 ## Services
