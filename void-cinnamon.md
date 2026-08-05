@@ -76,7 +76,7 @@ sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/
 ### Graphics
 
 ```console
-sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools ImageMagick
+sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools
 ```
 
 ### Internet
