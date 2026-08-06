@@ -50,7 +50,7 @@ sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl d
 ### Internet
 
 ```console
-sudo apt install filezilla geary transmission-gtk
+sudo apt install geary transmission-gtk
 ```
 
 ### Multimedia
