@@ -117,7 +117,7 @@ libvirt tools.
 #### Install and enable
 
 ```console
-sudo xbps-install flatpak xdg-desktop-portal-gnome
+sudo xbps-install flatpak xdg-desktop-portal-gtk
 ```
 
 Since we're still in console and dbus isn't running we enable Flathub
@@ -162,7 +162,6 @@ sudo ln -s /etc/sv/avahi-daemon /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/lightdm /var/service/
-sudo ln -s /etc/sv/uptimed /var/service/
 sudo ln -s /etv/sv/libvirtd /var/service/
 sudo ln -s /etc/sv/virtlockd /var/service/
 sudo ln -s /etc/sv/virtlogd /var/service/
