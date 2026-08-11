@@ -38,7 +38,7 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential meson ninja-build pipx bat fzf fastfetch alacritty galculator gvfs-backends mint-y-icons dmz-cursor-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential pipx bat fzf fastfetch alacritty galculator gvfs-backends mint-y-icons dmz-cursor-theme
 ```
 
 ### Graphics
@@ -50,7 +50,7 @@ sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl d
 ### Internet
 
 ```console
-sudo apt install filezilla thunderbird transmission-gtk
+sudo apt install thunderbird transmission-gtk
 ```
 
 ### Multimedia
