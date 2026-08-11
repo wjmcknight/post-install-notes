@@ -38,19 +38,13 @@ sudo apt full-upgrade
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude meson ninja-build pipx bat fzf fastfetch alacritty mint-y-icons dmz-cursor-theme
+sudo apt install bluez-firmware firmware-linux android-sdk-platform-tools-common htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude pipx bat fzf fastfetch alacritty mint-y-icons dmz-cursor-theme
 ```
 
 ### Graphics
 
 ```console
 sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl dcraw webp imagemagick
-```
-
-### Internet
-
-```console
-sudo apt install filezilla
 ```
 
 ### Multimedia
@@ -85,11 +79,12 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-#### Install Spotify and LocalSend
+#### Install Spotify, LocalSend, and Decibels
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
+flatpak install flathub org.gnome.Decibels
 ```
 
 ### LibreWolf
