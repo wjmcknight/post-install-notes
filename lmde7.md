@@ -5,25 +5,19 @@
 ### Core
 
 ```console
-sudo apt install htop nmap tmux memtest86+ zsh neovim uptimed git pipx bat fzf
+sudo apt install tuned android-sdk-platform-tools-common htop nmap tmux memtest86+ zsh neovim git pipx bat fzf alacritty
 ```
 
 ### Graphics
 
 ```console
-sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl
-```
-
-### Internet
-
-```console
-sudo apt install filezilla
+sudo apt install create-resources gimp gimp-data-extras libimage-exiftool-perl webp imagemagick
 ```
 
 ### Multimedia
 
 ```console
-sudo apt install audacity cheese beets python3-flask ffmpeg flac lame mpg123 mpv normalize-audio eyed3 cmus cmus-plugin-ffmpeg
+sudo apt install amberol audacity gnome-snapshot beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 cmus cmus-plugin-ffmpeg
 ```
 
 ### Virtualization
@@ -43,11 +37,12 @@ libvirt tools.
 
 ### Flatpak
 
-#### Install Spotify and LocalSend
+#### Install Spotify, LocalSend, and Decibels
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
+flatpak install flathub org.gnome.Decibels
 ```
 
 ### LibreWolf
@@ -69,7 +64,9 @@ sudo systemctl enable --now fstrim.timer
 ### Disable
 
 ```console
-sudo systemctl disable --now mpd
+sudo systemctl disable --now blueman-mechanism
+sudo systemctl disable --now bluetooth
+sudo systemctl disable --now open-iscsi
 sudo systemctl disable --now openvpn
 sudo systemctl disable --now ufw
 ```
