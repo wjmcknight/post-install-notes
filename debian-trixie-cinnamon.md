@@ -79,12 +79,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 A reboot is needed before being able to install anything from Flatpak.
 
-#### Install Spotify, LocalSend, and Decibels
+#### Install Spotify and LocalSend
 
 ```console
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
-flatpak install flathub org.gnome.Decibels
 ```
 
 ### LibreWolf
