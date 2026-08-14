@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools xorg xcursor-vanilla-dmz-aa xdg-user-dirs-gtk cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-calculator gnome-icon-theme gnome-keyring gnome-screenshot adwaita-fonts
 ```
 
 #### Set the LTS kernel as default kernel
@@ -82,13 +82,13 @@ sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools
 ### Internet
 
 ```console
-sudo xbps-install firefox-esr geary filezilla transmission-gtk
+sudo xbps-install firefox-esr geary transmission-gtk
 ```
 
 ### Multimedia
 
 ```console
-sudo xbps-install amberol audacity celluloid beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
+sudo xbps-install amberol audacity celluloid decibels beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp gst-plugins-ugly1 cmus cmus-ffmpeg cmus-pulseaudio
 ```
 
 ### Office
@@ -127,13 +127,12 @@ after a reboot.
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-#### Install LibreWolf, Spotify, LocalSend, and Decibels
+#### Install LibreWolf, Spotify, and LocalSend
 
 ```console
 flatpak install flathub io.gitlab.librewolf-community
 flatpak install flathub com.spotify.Client
 flatpak install flathub org.localsend.localsend_app
-flatpak install flathub org.gnome.Decibels
 ```
 
 ## Services
