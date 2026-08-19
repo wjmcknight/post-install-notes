@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools mesa-dri xdg-user-dirs-gtk gnome pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev uptimed htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g meson ninja python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-screenshot extension-manager
+sudo xbps-install linux-lts linux-firmware apparmor android-tools android-udev-rules base-devel xtools mesa-dri xdg-user-dirs-gtk gnome pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nano nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g python3-pipx alacritty bat fzf fastfetch gvfs-mtp gedit gedit-plugins gnome-screenshot extension-manager
 ```
 
 #### Set the LTS kernel as default kernel
@@ -63,13 +63,13 @@ sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/
 ### Graphics
 
 ```console
-sudo xbps-install gimp eog eog-plugins shotwell exiftool dcraw libwebp-tools ImageMagick
+sudo xbps-install gimp shotwell exiftool dcraw libwebp-tools ImageMagick
 ```
 
 ### Internet
 
 ```console
-sudo xbps-install firefox-esr geary filezilla transmission-gtk
+sudo xbps-install firefox-esr geary transmission-gtk
 ```
 
 ### Multimedia
@@ -148,7 +148,6 @@ sudo ln -s /etc/sv/avahi-daemon /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/cups-browsed /var/service/
 sudo ln -s /etc/sv/gdm /var/service/
-sudo ln -s /etc/sv/uptimed /var/service/
 sudo ln -s /etv/sv/libvirtd /var/service/
 sudo ln -s /etc/sv/virtlockd /var/service/
 sudo ln -s /etc/sv/virtlogd /var/service/
