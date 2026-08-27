@@ -32,7 +32,7 @@ echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ trixie-backp
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux tuned xorg xdg-user-dirs dmz-cursor-theme i3 lightdm lightdm-gtk-greeter network-manager network-manager-applet pipewire pipewire-audio pulseaudio-utils pavucontrol cups system-config-printer system-config-printer-udev xfce4-settings thunar thunar-volman gvfs-backends htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential pipx bat fzf fastfetch alacritty mousepad galculator mint-y-icons fonts-cantarell fonts-noto-color-emoji fonts-opensymbol fonts-symbola
+sudo apt install bluez-firmware firmware-linux tuned xorg xdg-user-dirs dmz-cursor-theme i3 lightdm lightdm-gtk-greeter network-manager network-manager-applet pipewire pipewire-audio pulseaudio-utils pavucontrol cups system-config-printer system-config-printer-udev xfce4-settings thunar thunar-volman gvfs-backends htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential pipx bat fzf fastfetch alacritty mousepad galculator adwaita-icon-theme-legacy mint-y-icons fonts-cantarell fonts-noto-color-emoji fonts-opensymbol fonts-symbola
 ```
 
 ### Graphics
