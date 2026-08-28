@@ -5,7 +5,7 @@
 ### Core
 
 ```console
-sudo apt install tuned android-sdk-platform-tools-common htop nmap tmux memtest86+ zsh neovim git pipx bat fzf alacritty
+sudo apt install tuned htop nmap tmux memtest86+ zsh neovim git pipx bat fzf alacritty
 ```
 
 ### Graphics
