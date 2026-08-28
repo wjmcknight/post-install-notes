@@ -31,6 +31,7 @@ echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ trixie-backp
 ```console
 sudo apt update
 sudo apt full-upgrade
+sudo apt autoremove
 ```
 
 ## Software
