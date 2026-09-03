@@ -9,7 +9,7 @@ sudo hostnamectl hostname name.localdomain
 ## Set a couple DNF options
 
 ```console
-echo -e "defaultyes=True\ninstall_weaks_deps=False" | sudo tee -a /etc/dnf/dnf.conf
+echo -e "defaultyes=True\ninstall_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
 ```
 
 ## Update system
@@ -111,5 +111,5 @@ sudo systemctl enable --now libvirtd
 sudo systemctl disable --now bluetooth
 sudo systemctl disable --now firewalld
 sudo systemctl disable --now iscsi-onboot
-sudo systemctl disable --now iscs-starter
+sudo systemctl disable --now iscsi-starter
 ```
