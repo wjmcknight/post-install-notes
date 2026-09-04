@@ -6,10 +6,10 @@
 sudo hostnamectl hostname name.localdomain
 ```
 
-## Set a couple DNF options
+## Set a few DNF options
 
 ```console
-echo -e "defaultyes=True\ninstall_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
+echo -e "defaultyes=True\nfastestmirror=True\install_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
 ```
 
 ## Update system
@@ -30,7 +30,13 @@ sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 sudo dnf group install sound-and-video
 ```
 
-### This step is only needed on the ThinkPad
+### This step for the workstation
+
+```console
+sudo dnf in mesa-va-drivers-freeworld
+```
+
+### This step for the ThinkPad
 
 ```console
 sudo dnf in ffmpeg-libs libva libva-utils
