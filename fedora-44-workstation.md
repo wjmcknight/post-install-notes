@@ -9,7 +9,7 @@ sudo hostnamectl hostname name.localdomain
 ## Set a few DNF options
 
 ```console
-echo -e "defaultyes=True\nfastestmirror=True\install_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
+echo -e "defaultyes=True\nfastestmirror=True\ninstall_weak_deps=False" | sudo tee -a /etc/dnf/dnf.conf
 ```
 
 ## Update system
