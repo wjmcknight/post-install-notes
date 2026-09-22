@@ -1,0 +1,107 @@
+# Debian Trixie Post-Install Notes: KDE
+
+## Enable contrib and non-free repos
+
+```console
+sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
+```
+
+## Switch security repo to better mirror
+
+```console
+sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/sources.list
+```
+
+## Enable Backports
+
+```console
+echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib" | sudo tee /etc/apt/sources.list.d/backports.list
+```
+
+## Update repos
+
+```console
+sudo apt update
+```
+
+## Software
+
+### Core
+
+```console
+sudo apt install bluez-firmware firmware-linux htop nmap tmux memtest86+ plocate zsh neovim curl aptitude pipx bat fzf fastfetch alacritty
+```
+
+### Graphics
+
+```console
+sudo apt install create-resources gimp-data-extras libimage-exiftool-perl dcraw webp
+```
+
+### Internet
+
+```console
+sudo apt install ktorrent 
+```
+
+### Multimedia
+
+```console
+sudo apt install audacity elisa kamoso beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi
+```
+
+### Virtualization
+
+```console
+sudo apt install virt-manager
+```
+
+#### Grant access to libvirt group
+
+```console
+sudo usermod -aG libvirt $(whoami)
+```
+
+A logout is needed here to reflect the permission changes for running
+libvirt tools.
+
+### Flatpak
+
+#### Install and enable
+
+```console
+sudo apt install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+A reboot is needed before being able to install anything from Flatpak.
+
+#### Install Spotify and LocalSend
+
+```console
+flatpak install flathub com.spotify.Client
+flatpak install flathub org.localsend.localsend_app
+```
+
+### LibreWolf
+
+```console
+sudo apt install extrepo
+sudo extrepo enable librewolf && sudo extrepo update librewolf
+sudo apt update && sudo apt install librewolf
+```
+
+## Services
+
+### Enable
+
+```console
+sudo systemctl enable --now fstrim.timer
+```
+
+### Disable
+
+```console
+sudo systemctl disable --now bluetooth
+sudo systemctl disable --now open-iscsi
+```
