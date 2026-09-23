@@ -12,26 +12,16 @@ sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' 
 sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/sources.list
 ```
 
-## Enable Deb Multimedia
-
-```console
-wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2024.9.1_all.deb
-sudo dpkg -i deb-multimedia-keyring_2024.9.1_all.deb
-echo -e "# Multimedia\ndeb http://mirror.csclub.uwaterloo.ca/debian-multimedia/ trixie main non-free\ndeb-src http://mirror.csclub.uwaterloo.ca/debian-multimedia/ trixie main non-free" | sudo tee /etc/apt/sources.list.d/multimedia.list
-```
-
 ## Enable Backports
 
 ```console
 echo -e "# Backports\ndeb http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib\ndeb-src http://mirror.csclub.uwaterloo.ca/debian/ trixie-backports main non-free-firmware non-free contrib" | sudo tee /etc/apt/sources.list.d/backports.list
 ```
 
-## Update system
+## Update repos
 
 ```console
 sudo apt update
-sudo apt full-upgrade
-sudo apt autoremove
 ```
 
 ## Software
