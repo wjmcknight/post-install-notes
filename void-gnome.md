@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-firmware apparmor base-devel xtools xorg xdg-user-dirs-gtk gnome pipewire avahi chrony cronie cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux ncurses-term memtest86+ plocate zsh neovim wget ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gedit gedit-plugins gnome-screenshot seahorse extension-manager
+sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs-gtk gnome pipewire avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gnome-screenshot seahorse extension-manager
 ```
 
 #### Enable apparmor
