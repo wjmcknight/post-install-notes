@@ -55,13 +55,13 @@ sudo xbps-install firefox-esr kmail ktorrent
 ### Multimedia
 
 ```console
-sudo xbps-install dragon-player elisa juk kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install dragon-player juk kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
 
 ```console
-sudo xbps-install korganizer libreoffice libreoffice-kde
+sudo xbps-install korganizer calligra-sheets calligra-words
 ```
 
 ### Virtualization
