@@ -47,7 +47,7 @@ sudo apt install ktorrent
 ### Multimedia
 
 ```console
-sudo apt install audacity elisa kamoso beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi
+sudo apt install audacity kamoso beets ffmpeg flac lame mpg123 mpv normalize-audio eyed3 yt-dlp gstreamer1.0-vaapi
 ```
 
 ### Virtualization
