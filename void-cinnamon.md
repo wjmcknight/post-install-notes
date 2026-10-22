@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs-gtk xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter pipewire avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gedit gedit-plugins gnome-calculator gnome-keyring gnome-icon-theme gnome-screenshot adwaita-fonts ttf-ubuntu-font-family
+sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs-gtk xcursor-vanilla-dmz-aa cinnamon-all lightdm lightdm-slick-greeter power-profiles-daemon pipewire avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gedit gedit-plugins gnome-calculator gnome-keyring gnome-icon-theme gnome-screenshot adwaita-fonts ttf-ubuntu-font-family
 ```
 
 #### Enable apparmor
@@ -142,6 +142,7 @@ sudo ln -s /etc/sv/cronie/ /var/service
 sudo ln -s /etc/sv/cupsd/ /var/service
 sudo ln -s /etc/sv/avahi-daemon/ /var/service
 sudo ln -s /etc/sv/lightdm/ /var/service
+sudo ln -s /etc/sv/power-profiles-daemon/ /var/service
 sudo ln -s /etc/sv/libvirtd/ /var/service
 sudo ln -s /etc/sv/virtlockd/ /var/service
 sudo ln -s /etc/sv/virtlogd/ /var/service
