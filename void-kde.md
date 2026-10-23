@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs kde-plasma kde-baseapps ocean-sound-theme NetworkManager avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gnome-keyring ark print-manager spectacle sweeper kcalc kdeconnect kwalletmanager kwrite  
+sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs kde-plasma kde-baseapps ocean-sound-theme tlp-pd NetworkManager avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gnome-keyring ark print-manager spectacle sweeper kcalc kdeconnect kwalletmanager kwrite
 ```
 
 #### Enable apparmor
@@ -55,7 +55,7 @@ sudo xbps-install firefox-esr kmail ktorrent
 ### Multimedia
 
 ```console
-sudo xbps-install dragon-player juk kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
+sudo xbps-install elisa haruna kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp
 ```
 
 ### Office
@@ -129,6 +129,7 @@ sudo ln -s /etc/sv/cronie/ /var/service
 sudo ln -s /etc/sv/cupsd/ /var/service
 sudo ln -s /etc/sv/avahi-daemon/ /var/service
 sudo ln -s /etc/sv/sddm/ /var/service
+sudo ln -s /etc/sv/tlp-pd/ /var/service
 sudo ln -s /etc/sv/libvirtd/ /var/service
 sudo ln -s /etc/sv/virtlockd/ /var/service
 sudo ln -s /etc/sv/virtlogd/ /var/service
