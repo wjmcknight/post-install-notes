@@ -55,7 +55,7 @@ sudo xbps-install firefox-esr kmail ktorrent
 ### Multimedia
 
 ```console
-sudo xbps-install elisa haruna kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio eyeD3 yt-dlp
+sudo xbps-install dragon-player elisa kamoso audacity beets ffmpeg flac mpg123 mpg123-pulseaudio mpv eyeD3 yt-dlp
 ```
 
 ### Office
