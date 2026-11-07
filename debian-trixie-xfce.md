@@ -6,12 +6,6 @@
 sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
 ```
 
-## Switch security repo to better mirror
-
-```console
-sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/sources.list
-```
-
 ## Enable Deb Multimedia
 
 ```console
@@ -39,7 +33,7 @@ sudo apt autoremove
 ### Core
 
 ```console
-sudo apt install bluez-firmware firmware-linux tuned htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential pipx bat fzf fastfetch alacritty galculator gvfs-backends mint-y-icons dmz-cursor-theme
+sudo apt install bluez-firmware firmware-linux htop nmap tmux memtest86+ plocate zsh neovim curl git aptitude build-essential pipx bat fzf fastfetch alacritty galculator gvfs-backends mint-y-icons dmz-cursor-theme
 ```
 
 ### Graphics

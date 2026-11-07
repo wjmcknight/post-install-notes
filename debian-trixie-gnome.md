@@ -6,12 +6,6 @@
 sudo sed -i 's|main non-free-firmware|main non-free-firmware non-free contrib|' /etc/apt/sources.list
 ```
 
-## Switch security repo to better mirror
-
-```console
-sudo sed -i 's|security.debian.org|mirror.csclub.uwaterloo.ca|' /etc/apt/sources.list
-```
-
 ## Enable Backports
 
 ```console
