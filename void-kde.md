@@ -49,7 +49,7 @@ sudo xbps-install gimp gwenview okular exiftool dcraw libwebp-tools ImageMagick
 ### Internet
 
 ```console
-sudo xbps-install firefox-esr kmail ktorrent
+sudo xbps-install firefox kmail ktorrent
 ```
 
 ### Multimedia
