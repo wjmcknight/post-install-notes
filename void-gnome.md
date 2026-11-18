@@ -14,7 +14,7 @@ sudo xbps-install -S
 ### Core
 
 ```console
-sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs-gtk gnome pipewire avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gnome-screenshot seahorse extension-manager
+sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs-gtk gnome power-profiles-daemon pipewire avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty gvfs-mtp gnome-screenshot seahorse extension-manager
 ```
 
 #### Enable apparmor
@@ -49,7 +49,7 @@ sudo xbps-install gimp shotwell exiftool dcraw libwebp-tools ImageMagick
 ### Internet
 
 ```console
-sudo xbps-install firefox-esr geary transmission-gtk
+sudo xbps-install firefox geary transmission-gtk
 ```
 
 ### Multimedia
@@ -129,6 +129,7 @@ sudo ln -s /etc/sv/cronie/ /var/service
 sudo ln -s /etc/sv/cupsd/ /var/service
 sudo ln -s /etc/sv/avahi-daemon/ /var/service
 sudo ln -s /etc/sv/gdm/ /var/service
+sudo ln -s /etc/sv/power-profiles-daemon/ /var/service
 sudo ln -s /etc/sv/libvirtd/ /var/service
 sudo ln -s /etc/sv/virtlockd/ /var/service
 sudo ln -s /etc/sv/virtlogd/ /var/service

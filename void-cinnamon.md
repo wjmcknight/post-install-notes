@@ -62,7 +62,7 @@ sudo xbps-install gimp loupe shotwell exiftool dcraw libwebp-tools
 ### Internet
 
 ```console
-sudo xbps-install firefox-esr thunderbird transmission-gtk
+sudo xbps-install firefox thunderbird transmission-gtk
 ```
 
 ### Multimedia
