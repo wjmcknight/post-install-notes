@@ -17,6 +17,13 @@ sudo xbps-install -S
 sudo xbps-install linux-firmware 7zip bind-utils cronie logrotate lsof nano ncurses-term netcat wget apparmor base-devel xtools xorg xdg-user-dirs kde-plasma kde-baseapps ocean-sound-theme NetworkManager power-profiles-daemon avahi chrony cups cups-browsed cups-filters nss-mdns system-config-printer system-config-printer-udev htop nmap tmux memtest86+ plocate zsh neovim ntfs-3g python3-pipx bat fzf fastfetch alacritty ark kcalc kdeconnect kwalletmanager kwrite print-manager spectacle sweeper
 ```
 
+#### Extra step on the ThinkPad for graphics and firmware
+
+```console
+sudo xbps-install intel-media-driver intel-ucode mesa-intel-dri libva-intel-driver
+sudo xbps-reconfigure --force linux6.18
+```
+
 #### Enable apparmor
 
 ```console
